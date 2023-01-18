@@ -58,7 +58,7 @@ nav a{
     -ms-transform-origin-y: 0.5rem;
 }
 
-.wrapper-container{
+.wrapper-container, .wrapper-container-welcome{
     display: flex;
     margin-left: 8rem;
     margin-top: 3rem;
@@ -67,6 +67,7 @@ nav a{
     mix-blend-mode: normal;
     border: 1px;
 }
+
 
 .wrapper-hero{
     margin-block-start: 5rem;
@@ -141,6 +142,19 @@ nav a{
 
 ul .slider{
     text-decoration: none;
+}
+
+.wrapper-container-welcome{
+    background-color: red;
+}
+
+.hero-welcome{
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px;
+    letter-spacing: -5px;
+    color: #EEEFF4;
+
 }
 
 .footer-container{
