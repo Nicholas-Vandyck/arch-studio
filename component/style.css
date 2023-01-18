@@ -144,17 +144,54 @@ ul .slider{
     text-decoration: none;
 }
 
-.wrapper-container-welcome{
+/* .wrapper-container-welcome{
     background-color: red;
-}
+} */
 
-.hero-welcome{
+.hero-welcome {
+    display: flex;
+    margin-top: -12rem;
+    margin-left: -70rem;
     font-weight: 700;
     font-size: 200px;
     line-height: 200px;
     letter-spacing: -5px;
+    z-index: 20;
     color: #EEEFF4;
 
+}
+
+.hero-welcome-pic{
+    width: 365px;
+    height: 568px;
+    margin-top: 7rem;
+    margin-left: 46.6rem;
+    
+}
+
+.hero-welcome-arc{
+    width: 30rem;
+    margin-block-start: 21.5rem;
+    margin-left: -50rem;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+    color: #1B1D23;
+
+}
+
+.hero-welcome-txts {
+    /* display: flex; */
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    margin-block-start: 20rem;
+    margin-inline-start: 3rem;
+    left: -33rem;
+    /* margin-left: -5rem; */
+    color: black;
 }
 
 .footer-container{
