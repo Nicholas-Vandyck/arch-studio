@@ -58,7 +58,19 @@ nav a{
     -ms-transform-origin-y: 0.5rem;
 }
 
-.wrapper-container, .wrapper-container-welcome{
+.wrapper-container{
+    display: flex;
+    margin-left: 8rem;
+    margin-top: 3rem;
+    width: 1110px;
+    height: 720px;
+    mix-blend-mode: normal;
+    border: 1px;
+    background-image: url(./assets/home/desktop/image-hero-paramour.jpg);
+    background-repeat: no-repeat;
+}
+
+.wrapper-container-welcome{
     display: flex;
     margin-left: 8rem;
     margin-top: 3rem;
@@ -166,7 +178,6 @@ ul .slider{
     height: 568px;
     margin-top: 11rem;
     margin-left: 48rem;
-    
 }
 
 .hero-welcome-arc{
@@ -194,31 +205,134 @@ ul .slider{
     color: black;
 }
 
-.wrapper-small-team{
-    display: block;
-    margin-left: 8.5rem;
-    margin-top: 12rem;
-    width: 1110px !important;
-    height: 560px;
-    background-color: red;
+.image{
+    display: flex;
+    width: 1110px;
+    height: 550px;
+    background-position: center center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-inline-start: 8.5rem;
+    margin-top: 15rem;
+    background-size: cover;
+    background-image: url(./assets/home/desktop/image-small-team.jpg);
 }
 
-.wrapper-small-team-txt{
+.image-overlay{
+    display: flex;
+    width: 1110px;
+    height: 550px;
+    background-color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    /* color: #FFFFFF; */
+}
+
+.image-text{
     width: 25rem;
-    margin-top: -24rem;
-    margin-inline-start: 11.5rem;
+    /* font-weight: 700; */
+    font-size: 56px;
+    line-height: 56px;
+    font-display: 5rem;
+    color: rgb(255, 250, 250) !important;
+    font-weight: 700;
+    margin: 10rem;
+    margin-left: 12rem;
+}
+
+.arrow-container text-left{
+ position: absolute;
+ left: 15rem;
+
+}
+
+.wrapper-images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-image-txt{
+    margin-top: 15rem;
+    margin-inline-start: 8.5rem;
     font-weight: 700;
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -2px;
-    color: #FFFFFF;
+    color: #1B1D23;
 }
 
-.about-container{
-    width: 187px;
-    height: 72px;
-    background-color: black;;
+.wrapper-image-one{
+    display: grid;
+    width: 350px;
+    height: 560px;
+   
+    /* opacity: 0.4; */
+    background-color: #000000;
+    background-image: url(./assets/portfolio/desktop/image-del-sol.jpg);
 }
+
+.wrapper-image-two{
+    display: grid;
+    width: 350px;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-image: url(./assets/portfolio/desktop/image-228b.jpg);
+}
+
+.wrapper-image-three{
+    display: grid;
+    width: 350px;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-image: url(./assets/portfolio/desktop/image-prototype.jpg);
+}
+
+.wrapper-digit{
+    grid-column: 3;
+    margin-inline-start: -2.7rem;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px; 
+    /* letter-spacing: -5px; */
+    color: #fafbff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-top: 1.7rem;
+    /* color: red; */
+}
+
+.wrapper-image-text{
+
+    display: flex;
+    margin-inline-start: 2rem;
+    width: 9rem;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #131111;
+}
+
+.wrapper-image-project{
+    display: flex;
+    /* margin-block-start: 3rem; */
+    margin-left: -12rem;
+    width: 10rem;
+    font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #fd0808;
+mix-blend-mode: normal;
+opacity: 0.75;
+}
+
 
 .footer-container{
     position: relative;
