@@ -141,3 +141,40 @@ nav a{
 ul .slider{
     text-decoration: none;
 }
+
+.footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8rem;
+    background-color:#EEEFF4;
+    box-sizing: border-box;
+    width: 984px; 
+    height:164px; 
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arch-logo-footer {
+    /* position: absolute; */
+    width: 164px;
+    height: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1D23;
+}
+
+.arch-logo-footer > svg{
+    fill: #FFFFFF;
+}
+
+.tab-left{
+    position: absolute;
+    left: 54rem;
+    top: 0.5rem;
+}
