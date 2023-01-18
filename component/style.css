@@ -1,0 +1,143 @@
+*, ::before ::after{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    scroll-behavior: smooth;
+}
+body{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'spartan';
+    font-style: normal;
+    background: #FFFFFF;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+.line{
+    display: flex;;
+    background-color: #C8CCD8;
+    width: 0.063rem;
+    height: 6.5rem;
+    margin-left: 4rem;
+    margin-top: -0.5rem;
+}
+
+.rotated{
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    color: #C8CCD8;
+    transform: rotate(90deg);
+    letter-spacing: 0.938rem;
+    margin-top: 14rem;
+    margin-left: -3.1rem;
+}
+
+.arch-logo{
+    display: inline-flex;
+    justify-content: space-around;
+    margin-top: -3.5rem;
+    margin-left: 8rem;
+}
+
+nav a{
+    width: 10rem;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-around;
+    color: #7D828F;
+    -ms-transform-origin-y: 0.5rem;
+}
+
+.wrapper-container{
+    display: flex;
+    margin-left: 8rem;
+    margin-top: 3rem;
+    width: 1110px;
+    height: 720px;
+    mix-blend-mode: normal;
+    border: 1px;
+}
+
+.wrapper-hero{
+    margin-block-start: 5rem;
+    margin-left: -55rem;
+}
+
+.wrapper-paramour{
+    width: 1rem;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+}
+
+.wrapper-london{
+    display: flex;
+    margin-top: -3rem;
+    width: 20rem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.arrow-container{
+    display: flex;
+    margin-top: 3rem;
+    background-color: black;
+    width: 15.5rem;
+    height: 3.5rem;
+}
+
+.arrow-container a{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.icon-arrow{
+    margin-left: 1.5rem;
+    width: 24px;
+}
+
+.hero-btn{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    margin-block-start: 8rem;
+    margin-inline-start: -20rem;
+    border: none;
+}
+
+.slider{
+    
+    
+    width: 70px;
+    height: 70px;
+}
+
+.slide-show{
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    outline: none;
+}
+
+ul .slider{
+    text-decoration: none;
+}
