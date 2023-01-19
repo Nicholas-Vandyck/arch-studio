@@ -5,8 +5,6 @@
     scroll-behavior: smooth;
 }
 body{
-    display: block;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'spartan';
@@ -24,7 +22,7 @@ main{
     background-color: #C8CCD8;
     width: 0.063rem;
     height: 6.5rem;
-    margin-left: 4rem;
+    margin-left: 64px;
     margin-top: -0.5rem;
 }
 
@@ -42,6 +40,7 @@ main{
 .arch-logo{
     display: inline-flex;
     justify-content: space-around;
+    margin-inline-start: 15rem;
     margin-top: -3.5rem;
     margin-left: 8rem;
 }
@@ -60,20 +59,23 @@ nav a{
 
 .wrapper-container{
     display: flex;
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
     margin-top: 3rem;
     width: 1110px;
     height: 720px;
     mix-blend-mode: normal;
     border: 1px;
+    margin-inline-start: 9rem;
     background-image: url(./assets/home/desktop/image-hero-paramour.jpg);
     background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper-container-welcome{
     display: flex;
-    margin-left: 8rem;
-    margin-top: 3rem;
+    /* margin: -8rem; */
+    /* margin-top: 3rem; */
     width: 1110px;
     height: 720px;
     mix-blend-mode: normal;
@@ -81,10 +83,10 @@ nav a{
 }
 
 
-.wrapper-hero{
+/* .wrapper-hero{
     margin-block-start: 5rem;
     margin-left: -55rem;
-}
+} */
 
 .wrapper-paramour{
     width: 1rem;
@@ -156,9 +158,9 @@ ul .slider{
     text-decoration: none;
 }
 
-/* .wrapper-container-welcome{
-    background-color: red;
-} */
+.wrapper-container-welcome{
+    margin-inline: 8.8rem;
+} 
 
 .hero-welcome {
     display: flex;
@@ -167,17 +169,17 @@ ul .slider{
     font-weight: 700;
     font-size: 200px;
     line-height: 200px;
-    letter-spacing: -5px;
+    letter-spacing: -3px;
     z-index: 20;
     color: #EEEFF4;
 
 }
 
 .hero-welcome-pic{
-    width: 370px;
+    width: 375px;
     height: 568px;
     margin-top: 11rem;
-    margin-left: 48rem;
+    margin-left: 47.7rem;
 }
 
 .hero-welcome-arc{
@@ -193,15 +195,13 @@ ul .slider{
 }
 
 .hero-welcome-txts {
-    /* display: flex; */
     position: relative;
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
     margin-block-start: 25rem;
-    margin-inline-start: 3rem;
+    margin-inline-start: 2rem;
     left: -33rem;
-    /* margin-left: -5rem; */
     color: black;
 }
 
@@ -213,10 +213,12 @@ ul .slider{
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-inline-start: 8.5rem;
+    margin-inline-start: 9rem;
     margin-top: 15rem;
     background-size: cover;
     background-image: url(./assets/home/desktop/image-small-team.jpg);
+    justify-content: center;
+    align-items: center center;
 }
 
 .image-overlay{
@@ -241,25 +243,32 @@ ul .slider{
     margin-left: 12rem;
 }
 
-.arrow-container text-left{
+.arrow-container-text-left{
  position: absolute;
  left: 15rem;
 
 }
 
-.wrapper-images{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    justify-content: center;
-    align-items: center;
+.wrapper-featured-section{
+        display: flex;
+        flex-direction: column;
+        margin-inline-start: 9rem;
+        width: 1110px;
+        margin-top: 5rem;
+}
+
+.wrapper-featured-arrow{
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+}
+
+.text-lefts{
+    width: 169px;
+    height: 62px;
 }
 
 .wrapper-image-txt{
-    margin-top: 15rem;
-    margin-inline-start: 8.5rem;
     font-weight: 700;
     font-size: 56px;
     line-height: 56px;
@@ -267,13 +276,28 @@ ul .slider{
     color: #1B1D23;
 }
 
+.wrapper-images{
+    display: grid;
+    width: 1110px;
+    /* margin-inline: 9.8rem; */
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: 1rem;
+    /* margin-left: 2rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-images-overlay{
+    width: 350px;
+    height: 560px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) -100%, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
+}
+
 .wrapper-image-one{
     display: grid;
     width: 350px;
     height: 560px;
-   
-    /* opacity: 0.4; */
-    background-color: #000000;
     background-image: url(./assets/portfolio/desktop/image-del-sol.jpg);
 }
 
@@ -294,12 +318,9 @@ ul .slider{
 }
 
 .wrapper-digit{
-    grid-column: 3;
-    margin-inline-start: -2.7rem;
     font-weight: 700;
     font-size: 200px;
     line-height: 200px; 
-    /* letter-spacing: -5px; */
     color: #fafbff;
     mix-blend-mode: normal;
     opacity: 0.5;
@@ -307,30 +328,40 @@ ul .slider{
     /* color: red; */
 }
 
-.wrapper-image-text{
+.digit-right{
+    margin-inline: 17.6rem;
+}
 
+.digit-right-shift{
+    margin-inline: 14rem;
+}
+
+.digit-right-shifts{
+    margin-inline: 14.5rem;
+}
+
+.wrapper-image-text{
     display: flex;
-    margin-inline-start: 2rem;
+    margin-inline: 2rem;
+    margin-top: 15rem;
     width: 9rem;
-    font-family: 'Spartan';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    color: #131111;
+    color: #ffffff;
 }
 
 .wrapper-image-project{
     display: flex;
-    /* margin-block-start: 3rem; */
-    margin-left: -12rem;
+    margin-left: 2rem;
     width: 10rem;
     font-weight: 500;
-font-size: 15px;
-line-height: 25px;
-color: #fd0808;
-mix-blend-mode: normal;
-opacity: 0.75;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.75;
 }
 
 
@@ -339,7 +370,7 @@ opacity: 0.75;
     display: flex;
     flex-direction: row;
     top: 5rem;
-    margin-left: 8rem;
+    margin-left: 8.8rem;
     background-color:#EEEFF4;
     box-sizing: border-box;
     width: 984px; 
