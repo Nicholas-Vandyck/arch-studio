@@ -3,84 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <!--Link font to the page-->
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;700&display=swap" rel="stylesheet">
+  <!--Link stylesheet to the page-->
+  <link rel="stylesheet" href="/component/css/portfolio.css">
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
 </head>
 <body>
-  Portfolio
-
-  Portfolio
-  About Us
-  Contact
-
-  Seraph Station
-  September 2019
-
-  Eebox Building
-  August 2017
-
-  Federal II Tower
-  March 2017
-
-  Project Del Sol
-  January 2016
-
-  Le Prototype
-  October 2015
-
-  228B Tower
-  April 2015
-
-  Grand Edelweiss Hotel
-  December 2013
-
-  Netcry Tower
-  August 2012
-
-  Hypers
-  January 2012
-
-  SXIV Tower
-  March 2011
-
-  Trinity Bank Tower
-  September 2010
-
-  Project Paramour
-  February 2008
-
-  Portfolio
-  About Us
-  Contact
-
-  See Our Portfolio
-  <div>
-    <section>
+  <div class="main">
         <div class="line">
           <svg width="1" height="103" viewBox="0 0 1 103" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="-1" width="1" height="104" fill="#C8CCD8"/>
             </svg> 
-            <p class="rotated">HOME</p>           
+            <p class="rotated">PORTFOLIO</p>           
         </div>
-        <div class="arch-logo">
-          <a href="index.html"><img src="./assets/logo.svg" alt=""></a>
-          
-          <nav>
-            <ul>
-              <a href="#">Portfolio</a>
-              <a href="#">About Us</a>
-              <a href="#">Contact</a>
-            </ul>
-          
-          </nav>
+        <div class="" style="display: flex; border: 1px dashed maroon; width: 100%;">
+          <div class="arch-logo" style="margin-left: 98px;">
+            <a href="index.html"><img src="/component/assets/logo.svg" alt=""></a>
+          </div>
+          <div>
+            <nav>
+              <ul>
+                <a href="#">Portfolio</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+              </ul>
+            </nav>
+          </div>
         </div>
-    </section>
+        </div>
     <div>
-      
+      <div class="grid-container">
+        <div class="gallery-01 grid">
+          <div class="container-path">
+            <span class="gallery-header">Seraph Station</span>
+            <br/>
+            <span class="gallery-label">September 2019</span>
+          </div>
+        </div>
+        <div class="gallery-02 grid">
+          <div  class="container-path">
+            <span class="gallery-header">Eebox Building</span>
+            <br/>
+            <span class="gallery-label">August 2017</span>
+          </div>  
+        </div>
+        <div class="gallery-03 grid">
+          <div class="container-path">
+            <span class="gallery-header">Federal II Tower</span>
+            <br/>
+            <span class="gallery-label">March 2017</span>
+          </div>
+        </div>
+        <div class="gallery-04 grid">
+          <div class="container-path">
+            <span class="gallery-header">Project Del Sol</span>
+            <br/>
+            <span class="gallery-label">January 2016</span>
+          </div>
+        </div>
+        <div class="gallery-05 grid">
+          <div class="container-path">
+            <span class="gallery-header">Le Prototype</span>
+            <br/>
+            <span class="gallery-label">October 2015</span>
+          </div>
+        </div>
+        <div class="gallery-06 grid">
+          <div class="container-path">
+            <span class="gallery-header">228B Tower</span>
+            <br/>
+            <span class="gallery-label">April 2015</span>
+          </div>
+        </div>
+        <div class="gallery-07 grid">
+          <div class="container-path">
+            <span class="gallery-header">Grand Edelweiss Hotel</span>
+            <br/>
+            <span class="gallery-label">December 2013</span>
+          </div>
+        </div>
+        <div class="gallery-08 grid">
+          <div class="container-path">
+            <span class="gallery-header">Netcry Tower</span>
+            <br/>
+            <span class="gallery-label">August 2012</span>
+          </div>
+        </div>
+        <div class="gallery-09 grid">
+          <div class="container-path">
+            <span class="gallery-header">Hypers</span>
+            <br/>
+            <span class="gallery-label">January 2012</span>
+          </div>
+        </div>
+        <div class="gallery-10 grid">
+          <div class="container-path">
+            <span class="gallery-header">SXIV Tower</span>
+            <br/>
+            <span class="gallery-label">March 2011</span>
+          </div>
+        </div>
+        <div class="gallery-11 grid">
+          <div class="container-path">
+            <span class="gallery-header">Trinity Bank Tower</span>
+            <br/>
+            <span class="gallery-label">September 2010</span>
+          </div> 
+        </div>
+        <div class="gallery-12 grid">
+          <div class="container-path">
+            <span class="gallery-header">Project Paramour</span>
+            <br/>
+            <span class="gallery-label">February 2008</span>
+          </div>
+          
+          
+        </div>
+      </div>
     </div>
-    <footer>
+    
       <div class="footer-container">
         <div class="arch-logo-footer">
           <!-- <img src="./assets/logo.svg" alt="logo"> -->
@@ -95,15 +138,13 @@
               <a href="#">About Us</a>
               <a href="#">Contact</a>
             </ul>
-           
           </nav>
           <div class="arrow-container tab-left">
             <a href="#">See Our Portfolio<img class="icon-arrow" src="./assets/icons/icon-arrow.svg" alt=""></a>
-           
           </div>
         </div>
       </div>
-    </footer>
+
   </div>
 <script src=""></script>
 </body>
