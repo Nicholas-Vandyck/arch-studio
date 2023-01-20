@@ -66,13 +66,13 @@ nav a{
     margin-top: 3rem;
     width: 1110px;
     height: 720px;
-    mix-blend-mode: normal;
+    /* mix-blend-mode: normal; */
     border: 1px;
     margin-inline-start: 9rem;
     background-image: url(./assets/home/desktop/image-hero-paramour.jpg);
     background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 
@@ -80,7 +80,11 @@ nav a{
 .wrapper-hero{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1110px;
     padding: 180px 376px 179px 190px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) -100%, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
 }
 
 .wrapper-paramour{
