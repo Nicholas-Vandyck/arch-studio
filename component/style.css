@@ -66,16 +66,12 @@ nav a{
     margin-top: 3rem;
     width: 1110px;
     height: 720px;
-    /* mix-blend-mode: normal; */
+    mix-blend-mode: normal;
     border: 1px;
     margin-inline-start: 9rem;
     background-image: url(./assets/home/desktop/image-hero-paramour.jpg);
     background-repeat: no-repeat;
-    /* justify-content: center;
-    align-items: center; */
 }
-
-
 
 .wrapper-hero{
     display: flex;
@@ -83,7 +79,6 @@ nav a{
     justify-content: center;
     align-items: center;
     width: 1110px;
-    padding: 180px 376px 179px 190px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) -100%, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
 }
 
@@ -145,44 +140,58 @@ nav a{
     gap: 0.1px;
     text-decoration: none;
     border-color: #ffffff;
+    border: none;
+}
+
+.slider:hover{
+    background: #1B1D23;
+    color: #fff;
 }
 
 ul .slider{
     text-decoration: none;
 }
 
-.wrapper-container-welcome{
+.hero-welcome{
     display: flex;
-    width: 1110px;
-    height: 720px;
-    mix-blend-mode: normal;
-    margin-inline: 8.8rem;
-    border: 1px;
-}
-
-.hero-welcome {
-    display: flex;
-    margin-top: -8rem;
-    margin-left: -70rem;
+    margin-top: 6rem;
+    margin-left: 8.5rem;
     font-weight: 700;
     font-size: 200px;
     line-height: 200px;
-    letter-spacing: -3px;
-    z-index: 20;
+    letter-spacing: -6px;
     color: #EEEFF4;
+    z-index: 5;
+}
+
+.arc-studio-text{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 120px;
+    width: 1110px;
+    margin: 9rem;
+    margin-top: -6.5rem;
 }
 
 .hero-welcome-pic{
-    width: 375px;
+    display: flex;
+    width: 350px;
     height: 568px;
-    margin-top: 11rem;
-    margin-left: 47.7rem;
+    padding: 10px 16px 20px 10px;
+   z-index: -1;
+}
+
+.arc-studio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 446px;
+    margin-top: -4rem;
 }
 
 .hero-welcome-arc{
-    width: 30rem;
-    margin-block-start: 21.5rem;
-    margin-left: -50rem;
+    width: 446px;
     font-weight: 700;
     font-size: 56px;
     line-height: 56px;
@@ -191,13 +200,11 @@ ul .slider{
 }
 
 .hero-welcome-txts {
-    position: relative;
+    display: flex;
+    /* margin-top: -1.5rem; */
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
-    margin-block-start: 25rem;
-    margin-inline-start: 2rem;
-    left: -33rem;
     color: black;
 }
 
@@ -217,6 +224,7 @@ ul .slider{
     justify-content: center;
     align-items: center center;
 }
+
 .overlay{
     display: flex;
     justify-content: center;
@@ -233,7 +241,6 @@ ul .slider{
 }
 
 .arrow{
-    /* width: 445px; */
     height: 224px;
 }
 
@@ -267,11 +274,11 @@ ul .slider{
 }
 
 .wrapper-featured-section{
-        display: flex;
-        flex-direction: column;
-        margin-inline-start: 9rem;
-        width: 1110px;
-        margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 9rem;
+    width: 1110px;
+    margin-top: 5rem;
 }
 
 .wrapper-featured-arrow{
@@ -296,11 +303,9 @@ ul .slider{
 .wrapper-images{
     display: grid;
     width: 1110px;
-    /* margin-inline: 9.8rem; */
     grid-template-columns: auto auto auto;
     gap: 30px;
     margin-top: 1rem;
-    /* margin-left: 2rem; */
     justify-content: center;
     align-items: center;
 }
@@ -342,7 +347,6 @@ ul .slider{
     mix-blend-mode: normal;
     opacity: 0.5;
     margin-top: 1.7rem;
-    /* color: red; */
 }
 
 .digit-right{
@@ -381,7 +385,6 @@ ul .slider{
     opacity: 0.75;
 }
 
-
 .footer-container{
     position: relative;
     display: flex;
@@ -401,7 +404,6 @@ ul .slider{
 }
 
 .arch-logo-footer {
-    /* position: absolute; */
     width: 164px;
     height: 164px;
     display: flex;
