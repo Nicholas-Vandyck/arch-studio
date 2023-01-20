@@ -59,7 +59,6 @@ nav a{
 
 .wrapper-container{
     display: flex;
-    /* margin-left: 8rem; */
     margin-top: 3rem;
     width: 1110px;
     height: 720px;
@@ -74,8 +73,6 @@ nav a{
 
 .wrapper-container-welcome{
     display: flex;
-    /* margin: -8rem; */
-    /* margin-top: 3rem; */
     width: 1110px;
     height: 720px;
     mix-blend-mode: normal;
