@@ -8,6 +8,22 @@
     display: flex;
     flex-direction: row;
 }
+
+.header{
+    width: 100%;
+    margin: 0 165px 0 56px;
+    
+}
+
+.header-card{
+    display: flex;
+    padding-top: 56px;
+}
+
+.logo{
+    margin-right: 66.84px;
+}
+
 .page-label{
     width: 89px;
     height: 100%;
@@ -30,16 +46,13 @@
     color: #C8CCD8;
     transform: rotate(90deg);
     letter-spacing: 0.938rem;
-    margin-top: 48px;
-    /* margin-top: 17rem;
-    margin-left: -6.8rem; */
+    margin-top: 4.35rem;
 }
 
 nav{
     padding: 7px 20px; 
     
 }
-
 
 nav>a{
     font-weight: 700;
@@ -49,8 +62,11 @@ nav>a{
     color: #C8CCD8;
 }
 
-
 nav>a:hover{
+    color: #000000;
+}
+
+nav>a:active{
     color: #000000;
 }
 
@@ -73,6 +89,7 @@ nav>a:hover{
 .gallery-01{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%),url(/component/assets/portfolio/desktop/image-seraph.jpg);
 }
+
 .gallery-01:hover{
     cursor: pointer;
     opacity: 0.8;
@@ -81,76 +98,97 @@ nav>a:hover{
 .gallery-02{
     background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-eebox.jpg);
 }
+
 .gallery-02:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-03{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-federal.jpg);
 }
+
 .gallery-03:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-04{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-del-sol.jpg);
 }
+
 .gallery-04:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-05{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-prototype.jpg);
 }
+
 .gallery-05:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-06{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-228b.jpg);
 }
+
 .gallery-06:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-07{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-edelweiss.jpg);
 }
+
 .gallery-07:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-08{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-netcry.jpg);
 }
+
 .gallery-08:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-09{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-hypers.jpg);
 }
+
 .gallery-09:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-10{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-sxiv.jpg);
 }
+
 .gallery-10:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-11{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-trinity.jpg);
 }
+
 .gallery-11:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .gallery-12{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-paramour.jpg);
 }
+
 .gallery-12:hover{
     cursor: pointer;
     opacity: 0.8;
@@ -183,10 +221,11 @@ nav>a:hover{
 /* -----------------------footer styling ----------------------*/
 .footer{
     display: flex;
-
+    position: relative;
     width: 61.5rem; 
     height:164px; 
     margin-top: 5rem;
+    margin-left: 20px;
     background-color:#EEEFF4;
 }
 
@@ -230,6 +269,21 @@ nav>a:hover{
 .icon-arrow{
     margin-left: 1.5rem;
     width: 24px;
+}
+
+.portfolio-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: black;
+    width: 15.5rem;
+    height: 3.5rem;
+}
+
+.portfolio-button > a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .tab-left{
