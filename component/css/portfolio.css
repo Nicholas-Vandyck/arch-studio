@@ -1,4 +1,60 @@
-body{
+*{
+    font-family: 'spartan';
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.page-label{
+    width: 89px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotated{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    font-weight: 500;
+    font-size: 15px;
+    color: #C8CCD8;
+    transform: rotate(90deg);
+    letter-spacing: 0.938rem;
+    margin-top: 48px;
+    /* margin-top: 17rem;
+    margin-left: -6.8rem; */
+}
+
+nav{
+    padding: 7px 20px; 
+    
+}
+
+
+nav>a{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #C8CCD8;
+}
+
+
+nav>a:hover{
+    color: #000000;
+}
+
+/* body{
     font-family: 'spartan';
     font-style: normal;
     background: #FFFFFF;
@@ -48,14 +104,14 @@ nav a{
     justify-content: space-around;
     color: #7D828F;
     -ms-transform-origin-y: 0.5rem;
-}
+} */
 
 /* -----------------------main-container styling ----------------------*/
 .grid-container{
     width: 1110px;
     height: 2330px;
     margin-top: 36px;
-    margin-inline-start: 175px;
+    margin-left: 20px;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
@@ -64,9 +120,6 @@ nav a{
 
 .grid{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
 }
 
 .gallery-01{
@@ -180,35 +233,28 @@ nav a{
     margin-top: 466px;
 }
 /* -----------------------footer styling ----------------------*/
-.footer-container{
-    position: relative;
+.footer{
     display: flex;
-    flex-direction: row;
-    top: 5rem;
-    margin-left: 11rem;
-    background-color:#EEEFF4;
-    box-sizing: border-box;
+
     width: 61.5rem; 
     height:164px; 
+    margin-top: 5rem;
+    background-color:#EEEFF4;
 }
 
-.footer-nav{
+.flex{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.arch-logo-footer {
-    /* position: absolute; */
+.footer-logo{ 
+    background-color: #1B1D23;
     width: 164px;
     height: 164px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1B1D23;
 }
 
-.arch-logo-footer > svg{
+.footer-logo > svg > path{
     fill: #FFFFFF;
 } 
 
