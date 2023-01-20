@@ -75,13 +75,7 @@ nav a{
     align-items: center;
 }
 
-.wrapper-container-welcome{
-    display: flex;
-    width: 1110px;
-    height: 720px;
-    mix-blend-mode: normal;
-    border: 1px;
-}
+
 
 .wrapper-hero{
     display: flex;
@@ -154,8 +148,13 @@ ul .slider{
 }
 
 .wrapper-container-welcome{
+    display: flex;
+    width: 1110px;
+    height: 720px;
+    mix-blend-mode: normal;
     margin-inline: 8.8rem;
-} 
+    border: 1px;
+}
 
 .hero-welcome {
     display: flex;
@@ -214,7 +213,6 @@ ul .slider{
     justify-content: center;
     align-items: center center;
 }
-
 .overlay{
     display: flex;
     justify-content: center;
@@ -231,6 +229,7 @@ ul .slider{
 }
 
 .arrow{
+    /* width: 445px; */
     height: 224px;
 }
 
@@ -264,11 +263,11 @@ ul .slider{
 }
 
 .wrapper-featured-section{
-    display: flex;
-    flex-direction: column;
-    margin-inline-start: 9rem;
-    width: 1110px;
-    margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        margin-inline-start: 9rem;
+        width: 1110px;
+        margin-top: 5rem;
 }
 
 .wrapper-featured-arrow{
@@ -293,9 +292,11 @@ ul .slider{
 .wrapper-images{
     display: grid;
     width: 1110px;
+    /* margin-inline: 9.8rem; */
     grid-template-columns: auto auto auto;
     gap: 30px;
     margin-top: 1rem;
+    /* margin-left: 2rem; */
     justify-content: center;
     align-items: center;
 }
@@ -337,6 +338,7 @@ ul .slider{
     mix-blend-mode: normal;
     opacity: 0.5;
     margin-top: 1.7rem;
+    /* color: red; */
 }
 
 .digit-right{
@@ -395,6 +397,7 @@ ul .slider{
 }
 
 .arch-logo-footer {
+    /* position: absolute; */
     width: 164px;
     height: 164px;
     display: flex;
