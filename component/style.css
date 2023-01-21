@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
+
 *, ::before ::after{
     box-sizing: border-box;
     border-width: 0;
@@ -12,6 +14,8 @@ body{
     font-family: 'spartan';
     font-style: normal;
     background: #FFFFFF;
+    height: 2983px;
+
 }
 
 main{
@@ -46,7 +50,7 @@ main{
     display: inline-flex;
     justify-content: space-around;
     margin-top: -3.5rem;
-    margin-left: 8rem;
+    margin-left: 11rem;
 }
 
 nav a{
@@ -90,17 +94,72 @@ nav a{
 .icon-arrow path{
     fill: #FFFFFF;
 }
+.desktop img {
+    position: absolute;
+width: 635px;
+height:720 px;
+left: 165px;
+top: 152px;
+}
 
 .footer-container{
     position: relative;
     display: flex;
     flex-direction: row;
-    top: 5rem;
+    top: 2860px;
     margin-left: 8rem;
     background-color:#EEEFF4;
     box-sizing: border-box;
     width: 984px; 
     height:164px; 
+    left: 165px;
+}
+.about {
+    position: absolute;
+width: 652px;
+height: 200px;
+left: -120px;
+top: -125px;
+color: #EEEFF4;
+font-size: 200px;
+font-weight: 700;
+line-height: 200px;
+text-align: right;
+z-index: 1;
+
+}
+.textcontainer {
+    position: absolute;
+width: 793px;
+height: 503px;
+left: 647px;
+top: 369px;
+background:blue;
+z-index: 1;
+position: absolute;
+}
+.team p {
+    position: absolute;
+height: 138px;
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 56px;
+letter-spacing: -2px;
+left: 260px;
+top:110px;
+color: #1B1D23;
+}
+
+.professionals span {
+    position: absolute;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 34px;
+    line-height: 23px;
+    color: #60636D;
+    left: 5px;
+    top: 300px;   
 }
 
 .footer-nav{
