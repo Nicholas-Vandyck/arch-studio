@@ -421,3 +421,53 @@ ul .slider{
     left: 54rem;
     top: 0.5rem;
 }
+
+@media only screen and (min-width: 375px) and (max-width: 768px){
+
+    .line{
+        margin: 0 0 0 29px;
+    }
+
+    .top-logo{
+        width: 491px;
+    }
+
+    .arch-image{
+        width: 86px;
+        height: 40px;
+    }
+
+    nav{
+        display: flex;
+        font-size: 15px;
+        width: 316px;
+    }
+
+    .wrapper-container{
+        width: 573px;
+        height: 720px;
+    }
+
+    .hero-welcome{
+        width: 581px;
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 200px;
+        letter-spacing: -3px;
+
+    }
+
+    .hero-welcome-pic{
+        display: none;
+    }
+
+    .arc-studio{
+        display: flex;
+        margin: 5rem 0 0 0;
+    }
+
+    .hero-welcome-arc{
+        width: 446px;
+        
+    }
+}
