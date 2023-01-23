@@ -134,14 +134,13 @@ width: 793px;
 height: 503px;
 left: 647px;
 top: 369px;
-/* background:blue; */
+background:white;
 z-index: 1;
 position: absolute;
 }
 .team p {
     position: absolute;
 height: 138px;
-font-style: normal;
 font-weight: 700;
 font-size: 56px;
 line-height: 56px;
@@ -153,7 +152,7 @@ color: #1B1D23;
 
 .professionals span {
     position: absolute;
-    font-style: normal;
+
     font-weight: 100;
     font-size: 19px;
     line-height: 25px;
@@ -189,4 +188,92 @@ color: #1B1D23;
     left: 54rem;
     top: 0.5rem;
 }
+/* .heritage {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  width:750px;
+  height: 568px;
+  top:1000px;
+  left: 647px;
+} */
+.heritagetext {
+    position: absolute;
+    width: 446px;
+    height: 568px;
+    left: 181px;
+    top: 1028px;
+    background-color: blue;
+}
+.subheritagetext {
+    position: absolute;
+    font-family: 'Spartan';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+width: 445px;
+height: 300px;
+top: 260px;
+/* or 167% */
+
+
+color: #60636D;
+}
+.heritagetext strong {
+    position: absolute;
+font-family: 'Spartan';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 56px;
+width: 446px;
+height: 136px;
+top:60px;
+/* background-color: green; */
+/* or 100% */
+
+letter-spacing: -2px;
+
+color: #1B1D23;
+
+}
+.heritageimage {
+    position: absolute;
+    width: 540px;
+    height: 568px;
+    left: 800px;
+    top: 1072px;  
+}
+.leadersimage {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    width: 730px;
+    height: 860px;
+    left: 570px;
+    top: 1840px;
+    background-color: blue;
+    
+ }
+ .leaders label {
+    position: absolute;
+width: 446px;
+height: 112px;
+left: 165px;
+top: 1840px;
+font-weight: 700;
+font-size: 56px;
+line-height: 56px;
+letter-spacing: -2px;
+color: #1B1D23;
+
+ }
+
+  
+
+
+ 
+
 
