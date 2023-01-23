@@ -80,6 +80,7 @@ nav>a:active{
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    background: orangered;
 }
 
 .grid{
@@ -240,7 +241,12 @@ nav>a:active{
     width: 164px;
     height: 164px;
 }
-
+.nav-position{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0 165px 0 56px;
+}
 .footer-logo > svg > path{
     fill: #FFFFFF;
 } 
@@ -290,4 +296,99 @@ nav>a:active{
     position: absolute;
     left: 53.8rem;
     top: 0.5rem;
+}
+
+/* ------------tablet view-------------- */
+@media (max-width: 768px) {
+    /* -----------------------main-container styling ----------------------*/
+    .grid-container{
+        width: 573px;
+        height: auto;
+        /* margin-top: 36px;
+        margin-left: 20px; */
+        display: flex;
+        flex-direction: column;
+        /* gap: 30px; */
+         background-color: orange;
+         background-repeat: no-repeat;
+        height: 240px;
+    }
+        / 
+
+    .gallery-01{
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-seraph.jpg);
+    }
+    .gallery-02{
+        background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-eebox.jpg);
+    }
+    
+    .gallery-03{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-federal.jpg);
+    }
+    
+    .gallery-04{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-del-sol.jpg);
+    }
+    
+    .gallery-05{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-prototype.jpg);
+    }
+    
+    .gallery-06{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-228b.jpg);
+    }
+    
+    
+    .gallery-07{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-edelweiss.jpg);
+    }
+    
+    .gallery-08{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-netcry.jpg);
+    }
+
+    .gallery-09{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-hypers.jpg);
+    }
+    
+    .gallery-10{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-sxiv.jpg);
+    }
+    
+    .gallery-11{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-trinity.jpg);
+    }
+    
+    .gallery-12{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-paramour.jpg);
+    }
+    
+
+    /*---------------footer-------------------*/
+    .footer{
+        display: flex;
+        position: relative;
+        width: 620px; 
+        height:164px; 
+        margin-top: 0;
+        margin-left: 0;
+        background-color:#EEEFF4;
+    }
+
+    .nav-position{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin: 0 0 0 0;
+    }
+
+    .tab-left{
+        position: absolute;
+        left: 33.8rem;
+        top: 0.5rem;
+    }
 }
