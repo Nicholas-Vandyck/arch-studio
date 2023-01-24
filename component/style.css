@@ -422,10 +422,14 @@ ul .slider{
     top: 0.5rem;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) and (min-width: 375px)
+{
 
-    body{
+    main{
+        box-sizing: border-box;
         width: 768;
+        padding: 0;
+        margin: 0;
     }
     .line{
         margin: 0 0 0 29px;
@@ -460,8 +464,8 @@ ul .slider{
         font-size: 120px;
         font-weight: 700;
         line-height: 200px;
-        letter-spacing: 7px;
-        margin-left: 97px;
+        letter-spacing: -1px;
+        margin-left: 5px;
     }
 
     .hero-welcome-pic{
@@ -490,8 +494,122 @@ ul .slider{
         margin-left: 97px;
     }
 
-    .image, .overlay, .image-overlay{
+    .image{
         width: 576px;
         margin-left: 97px;
     }
+
+    .overlay{
+        display: flex;
+        width: 572px;
+        /* margin-left: 9rem; */
+    }
+
+    .image-text{
+        font-size: 56px;
+    }
+
+    .wrapper-featured{
+        display: flex;
+        width: 445px;
+        margin-left: 15rem;
+    }
+
+    .wrapper-images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper-image-txt {
+        height: 56px;
+        font-size: 26px;
+    }
+
+    .wrapper-featured-section{
+        width: 576px;
+        margin-inline-start: 6rem;
+    }
+
+    .wrapper-images{
+        width: 576px;
+        margin-left: -3.5rem;
+    }
+
+    .wrapper-images-overlay{
+        width: 576px;
+        height: 240px;
+    }
+
+    .wrapper-image-one{
+        width: 576px;
+        height: 240px;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper-image-two{
+        width: 576px;
+        height: 240px;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper-image-three{
+        width: 576px;
+        height: 240px;
+    }
+
+    .wrapper-digit{
+        font-size: 200px;
+    }
+
+    .wrapper-featured-arrow{
+        /* display: flex;
+        justify-content: space-between; */
+        width: 580px;
+        margin-left: -3rem;
+    }
+    
+    .text-lefts{
+        width: 153px;
+        height: 56px;
+        margin: 1rem;
+    }
+
+    .footer-container{
+        width: 678px;
+        height: 120px;
+    }
+
+    .arch-logo-footer{
+        width: 120px;
+        height: 120px;
+    }
+
+    nav a{
+        /* display: flex; */
+        flex-direction: column;;
+        width: 75px;
+    }
+
+    .tab-left{
+        margin-left: -30rem;
+    }
+
+    .arrow-container{
+        width: 200px;
+        height: 50px;
+        justify-content: center;
+    }
+
+    .footer-portfolio{
+        text-align: center;
+        margin-left: -1rem;
+        margin-top: -5px;
+        font-size: 12px;
+    }
+
+    footer{
+        margin-left: -9rem;
+    }
+
+
 }
