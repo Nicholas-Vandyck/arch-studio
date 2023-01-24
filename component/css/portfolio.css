@@ -80,7 +80,6 @@ nav>a:active{
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    background: orangered;
 }
 
 .grid{
@@ -304,13 +303,18 @@ nav>a:active{
 /* ------------tablet view-------------- */
 @media (max-width: 768px) {
     /* -----------------------main-container styling ----------------------*/
+    .header{
+        width: 100%;
+        margin: 0 33px 0 auto;
+    }
+    
     .grid-container{
         width: 573px;
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
-        /* gap: 30px; */
-         background-color: orange;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
          background-repeat: no-repeat;
     }
 
@@ -321,53 +325,66 @@ nav>a:active{
         background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-seraph.jpg);
     }
     .gallery-02{
+        height: 240px;
         background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-eebox.jpg);
     }
     
     .gallery-03{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-federal.jpg);
     }
     
     .gallery-04{
-        background-size: cover;
-        background-repeat: no-repeat;
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-del-sol.jpg);
     }
     
     .gallery-05{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-prototype.jpg);
     }
     
     .gallery-06{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-228b.jpg);
     }
     
     
     .gallery-07{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-edelweiss.jpg);
     }
     
     .gallery-08{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-netcry.jpg);
     }
 
     .gallery-09{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-hypers.jpg);
     }
     
     .gallery-10{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-sxiv.jpg);
     }
     
     .gallery-11{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-trinity.jpg);
     }
     
     .gallery-12{
+        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-paramour.jpg);
     }
-    
 
+    .container-path{
+        margin: 0 40px;
+        margin-top: 146px;
+    }
+    
     /*---------------footer-------------------*/
     .footer{
         margin-left: 0;
@@ -376,27 +393,37 @@ nav>a:active{
    .footer-card{
         display: flex;
         position: relative;
-        width: 80%; 
+        width: 85%; 
         height:100%; 
-        margin-top: 0;
+        margin-top: 200px;
         margin-left: 0;
         background-color:#EEEFF4;
     }
 
-    .nav-position {
-        margin: 0 auto 0 auto;
+    .arrow-container{
+        display: flex;
+        margin-top: 3rem;
+        background-color: black;
     }
 
-     /* .nav-position{
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        margin: 0 0 0 0;
-    }*/
+    .nav-position {
+        margin: 0 auto 0 76px;
+    }
+
+    .footer-logo{ 
+        background-color: #1B1D23;
+        width: 120px;
+        height: 120px;
+    }
 
     .tab-left{
         position: absolute;
-        left: 33rem;
-        top: 0.5rem;
+        left: 34rem;
+        top: -0.5rem;
     } 
+}
+
+/* ------------tablet view-------------- */
+@media (max-width: 768px) {
+
 }
