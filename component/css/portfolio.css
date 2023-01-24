@@ -221,12 +221,15 @@ nav>a:active{
 }
 /* -----------------------footer styling ----------------------*/
 .footer{
+    margin-left: 162.1px;
+}
+.footer-card{
     display: flex;
     position: relative;
     width: 61.5rem; 
     height:164px; 
     margin-top: 5rem;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     background-color:#EEEFF4;
 }
 
@@ -303,19 +306,16 @@ nav>a:active{
     /* -----------------------main-container styling ----------------------*/
     .grid-container{
         width: 573px;
-        height: auto;
-        /* margin-top: 36px;
-        margin-left: 20px; */
+        height: 100%;
         display: flex;
         flex-direction: column;
         /* gap: 30px; */
          background-color: orange;
          background-repeat: no-repeat;
-        height: 240px;
     }
-        / 
 
     .gallery-01{
+        height: 240px;
         /* background-size: cover; */
         /* background-repeat: no-repeat; */
         background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-seraph.jpg);
@@ -370,25 +370,33 @@ nav>a:active{
 
     /*---------------footer-------------------*/
     .footer{
+        margin-left: 0;
+    }
+    
+   .footer-card{
         display: flex;
         position: relative;
-        width: 620px; 
-        height:164px; 
+        width: 80%; 
+        height:100%; 
         margin-top: 0;
         margin-left: 0;
         background-color:#EEEFF4;
     }
 
-    .nav-position{
+    .nav-position {
+        margin: 0 auto 0 auto;
+    }
+
+     /* .nav-position{
         display: flex;
         align-items: center;
         justify-content: start;
         margin: 0 0 0 0;
-    }
+    }*/
 
     .tab-left{
         position: absolute;
-        left: 33.8rem;
+        left: 33rem;
         top: 0.5rem;
-    }
+    } 
 }
