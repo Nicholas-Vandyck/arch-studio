@@ -422,14 +422,19 @@ ul .slider{
     top: 0.5rem;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 768px){
+@media only screen and (max-width: 768px){
 
+    body{
+        width: 768;
+    }
     .line{
         margin: 0 0 0 29px;
+        width: 1px;
     }
 
     .top-logo{
         width: 491px;
+        margin-left: 97px;
     }
 
     .arch-image{
@@ -444,30 +449,49 @@ ul .slider{
     }
 
     .wrapper-container{
-        width: 573px;
+        display: flex;
+        width: 68px;
         height: 720px;
+        margin-left: 97px;
     }
 
     .hero-welcome{
-        width: 581px;
+        width: 590px;
         font-size: 120px;
         font-weight: 700;
         line-height: 200px;
-        letter-spacing: -3px;
-
+        letter-spacing: 7px;
+        margin-left: 97px;
     }
 
     .hero-welcome-pic{
         display: none;
     }
 
-    .arc-studio{
+    .arc-studio-text{
         display: flex;
-        margin: 5rem 0 0 0;
+        width: 446px;
+        margin-top: 0.5rem;
+        margin-left: 97px;
     }
 
     .hero-welcome-arc{
-        width: 446px;
-        
+       width: 306px;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -2px;
+        margin-right: 100px;
+    }
+
+    .hero-welcome-txts{
+        width: 572px;
+        height: 275px;
+        margin-left: 97px;
+    }
+
+    .image, .overlay, .image-overlay{
+        width: 576px;
+        margin-left: 97px;
     }
 }
