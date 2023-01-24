@@ -268,8 +268,65 @@ font-size: 56px;
 line-height: 56px;
 letter-spacing: -2px;
 color: #1B1D23;
-
  }
+ .imagetext1 {
+    position: absolute;
+    width: 345px;
+    height: 54px;
+    left: 5px;
+    top: 330px;
+    background-color: green;
+ }
+ .image1 p {
+    position: absolute;
+    height: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1B1D23;
+    top:-5px;
+    
+ }
+ .image1 span {
+    position: absolute;
+height: 25px;
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #1B1D23;
+top: 35px;
+ }
+ .imagetext2 {
+    position: absolute;
+width: 350px;
+height: 54px;
+left: px;
+top: 330px;
+background-color: yellow;
+ }
+ .image2 p {
+
+    position: absolute;
+    height: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1B1D23;
+    top:-10px;
+ }
+.image2 span  {
+
+    position: absolute;
+height: 25px;
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #1B1D23;
+opacity: 0.75;
+top:30px;
+
+}
+
 
   
 
