@@ -48,13 +48,19 @@
     letter-spacing: 0.938rem;
     margin-top: 4.35rem;
 }
-
-nav{
-    padding: 7px 20px; 
-    
+.btn-links{
+    display: flex;
 }
 
-nav>a{
+.btn{
+    padding: 7px 20px; 
+    border-color: transparent;
+    color: #C8CCD8;
+    background: #EEEFF4;
+}
+
+.btn>a{
+    padding: 7px 0;
     font-weight: 700;
     font-size: 15px;
     line-height: 25px;
@@ -62,14 +68,31 @@ nav>a{
     color: #C8CCD8;
 }
 
-nav>a:hover{
+.btn>a:enabled,.btn>a:hover,.btn>a:active{
     color: #000000;
+    border-bottom: 1px solid #1B1D23;
 }
 
-nav>a:active{
+.btn>a:active{
     color: #000000;
+    border-bottom: 1px solid #1B1D23;
 }
 
+.grey{
+    background-color: #FFFFFF;
+}
+
+.hamburger-icon{
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+
+.close-icon{
+    display: none;
+    width: 24px;
+    height: 24px;
+}
 /* -----------------------main-container styling ----------------------*/
 .grid-container{
     width: 1110px;
@@ -419,11 +442,193 @@ nav>a:active{
     .tab-left{
         position: absolute;
         left: 34rem;
-        top: -0.5rem;
+        /* top: 0.5rem; */
     } 
 }
 
-/* ------------tablet view-------------- */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
+    /* -----------------------main-container styling ----------------------*/
+    .header{
+        width: 100%;
+        margin: 0;
+    }
 
+    .page-label{
+        display:none;
+    }
+
+    .header-card{
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        padding-left: 32px;
+        padding-top: 32px;
+        /* position: relative; */
+    }
+
+    .btn-links{ 
+        position: absolute;
+        background: #EEEFF4;
+        border: 1px solid black;
+        top: 96px;
+        height: 235px;
+        width: 343px;
+        flex-direction: column;
+        opacity: 0;
+    }
+
+    .btn-links.active{
+        opacity: 1;
+    }
+
+    .btn{
+        padding: 7px 20px; 
+        border-color: transparent;
+        margin: 18px 48px;
+    }
+    
+    .btn>a{
+        padding: 0 0;
+        font-size: 18px;
+        color: #1B1D23;
+        ;
+    }
+    
+    .btn>a:enabled,.btn>a:hover,.btn>a:active{
+        color: #C8CCD8;
+        border: none;
+    }
+
+    .hamburger-icon{
+        display: inline;
+    }
+
+    .close-icon{
+        display: inline;
+    }
+    
+    .hamburger-icon.inactive, .close-icon.inactive{
+        display: none;
+    }    
+    .grid-container{
+        width: 311px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+         background-repeat: no-repeat;
+    }
+
+    .gallery-01{
+        height: 240px;
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-seraph.jpg);
+    }
+
+    .grey{
+        background-color: #EEEFF4;
+    }
+
+    .gallery-02{
+        height: 240px;
+        background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-eebox.jpg);
+    }
+    
+    .gallery-03{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-federal.jpg);
+    }
+    
+    .gallery-04{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-del-sol.jpg);
+    }
+    
+    .gallery-05{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-prototype.jpg);
+    }
+    
+    .gallery-06{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-228b.jpg);
+    }
+    
+    
+    .gallery-07{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-edelweiss.jpg);
+    }
+    
+    .gallery-08{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-netcry.jpg);
+    }
+
+    .gallery-09{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-hypers.jpg);
+    }
+    
+    .gallery-10{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-sxiv.jpg);
+    }
+    
+    .gallery-11{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-trinity.jpg);
+    }
+    
+    .gallery-12{
+        height: 240px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-paramour.jpg);
+    }
+
+    .container-path{
+        margin: 0 40px;
+        margin-top: 146px;
+    }
+    
+    /*---------------footer-------------------*/
+    .footer{
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        /* margin: 48px 62px; */
+    }
+    
+   .footer-card{
+        display: flex;
+        position: relative;
+        width: 100%;
+        padding: auto auto;
+        flex-direction: column;
+        background-color:#EEEFF4;
+    }
+
+    .arrow-container{
+        display: flex;
+        margin-top: 3rem;
+        background-color: black;
+    }
+
+    .nav-position {
+        margin: 0 auto 0 76px;
+        flex-direction: column;
+    }
+
+    .footer-logo{ 
+        background-color: #1B1D23;
+        width: 120px;
+        height: 120px;
+    }
+
+    .tab-left{
+        position: relative;
+        left: 0;
+        top: 0;
+    } 
 }

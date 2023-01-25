@@ -28,19 +28,21 @@
               <img src="/component/assets/logo.svg" alt="">
             </a>
           </div>
-          <div style="display: flex;">
-            <nav>
-                <a href="#">Portfolio</a>
-              </nav>
-              <nav>
-                <a href="#">About Us</a>
-              </nav>
-              <nav>
-                <a href="#">Contact</a>
-              </nav>
-              </ul>
-            </nav>
+          <div class="btn-links">
+            <button class="btn grey">
+              <a href="#">Portfolio</a>
+            </button>
+            <button class="btn grey">
+              <a href="#">About Us</a>
+            </button>
+            <button class="btn grey">
+              <a href="#">Contact</a>
+            </button>
+
+            <script src="/component/js/script.js"></script>
           </div>
+          <img src="/component/icons/icon-hamburger.svg" alt="hamburger" class="hamburger-icon">
+          <img src="/component/icons/icon-close.svg" alt="close" class="close-icon">
         </div>
         <div class="grid-container">
           <div class="gallery-01 grid">
@@ -138,15 +140,15 @@
           </svg>
         </div>
         <div class="nav-position">
-          <nav>
+          <button class="btn">
             <a href="#">Portfolio</a>
-          </nav>
-          <nav>
+          </button>
+          <button class="btn">
             <a href="#">About Us</a>
-          </nav>
-          <nav>
+          </button>
+          <button class="btn">
             <a href="#">Contact</a>
-          </nav>
+          </button>
         </div>
         <div class="portfolio-button tab-left">
           <a href="portfolio.html">
@@ -157,6 +159,18 @@
       </div>
     </div>
   </div>
-<script src=""></script>
+<script>
+  const ham = document.querySelector(".hamburger-icon");
+  // console.log(ham);
+  ham.addEventListener("click", display)
+
+  function display(){
+    const navbar = document.querySelector(".btn-links");
+    const close = document.querySelector(".close-icon");
+    navbar.classList.add("active");
+    ham.classList.add("inactive");
+    close.classList.remove("inactive");
+  }
+</script>
 </body>
 </html>
