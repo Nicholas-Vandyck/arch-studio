@@ -73,6 +73,10 @@ nav a{
     background-repeat: no-repeat;
 }
 
+.image-paramour, .mobile-paramour{
+    display: none;
+}
+
 .wrapper-hero{
     display: flex;
     flex-direction: column;
@@ -323,6 +327,10 @@ ul .slider{
     background-image: url(./assets/portfolio/desktop/image-del-sol.jpg);
 }
 
+.del, .sea, .prototype {
+    display: none;
+}
+
 .wrapper-image-two{
     display: grid;
     width: 350px;
@@ -437,6 +445,8 @@ ul .slider{
     }
 
     .top-logo{
+        display: flex;
+        flex-direction: column;
         width: 491px;
         margin-left: 97px;
     }
@@ -452,13 +462,13 @@ ul .slider{
         width: 316px;
     }
 
-    .wrapper-container{
+    .image-paramour{
         display: flex;
-        width: 68px;
-        height: 720px;
-        margin-left: 97px;
     }
 
+    .wrapper-container, .mobile-paramour{
+        display: none;
+    }
     .hero-welcome{
         width: 590px;
         font-size: 120px;
@@ -540,21 +550,21 @@ ul .slider{
         height: 240px;
     }
 
+    .del, .sea, .prototype {
+        display: flex;
+    }
+
     .wrapper-image-one{
-        width: 576px;
-        height: 240px;
-        background-repeat: no-repeat;
+        display: none;
     }
 
     .wrapper-image-two{
-        width: 576px;
-        height: 240px;
-        background-repeat: no-repeat;
+     display: none;
     }
 
     .wrapper-image-three{
-        width: 576px;
-        height: 240px;
+       display: none;
+        
     }
 
     .wrapper-digit{
@@ -612,4 +622,19 @@ ul .slider{
     }
 
 
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px){
+
+    nav{
+        display: none;
+    }
+
+    .image-paramour{
+        display: none;
+    }
+
+    .mobile-paramour{
+        display: flex;
+    }
 }
