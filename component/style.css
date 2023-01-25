@@ -231,11 +231,7 @@ line-height: 56px;
 width: 446px;
 height: 136px;
 top:60px;
-/* background-color: green; */
-/* or 100% */
-
 letter-spacing: -2px;
-
 color: #1B1D23;
 
 }
@@ -324,8 +320,64 @@ line-height: 25px;
 color: #1B1D23;
 opacity: 0.75;
 top:30px;
+}
+.imagetext3 {
+position: absolute;
+width: 300px;
+height: 40px;
+left: 10px;
+top: 760px;
+background-color: white;
+
+  
+}
+.image3 p {
+    position: absolute;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+color: #1B1D23;
+top:-22px;
+}
+.image3 span { 
+    position: absolute; 
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #1B1D23;
+top:18px;
+}
+.imagetext4 {
+ 
+    position: absolute;
+    width: 350px;
+    height: 54px;
+    left: 364px;
+    top: 750px;
+    background-color: aqua;
+    
+}
+.image4 p {
+    position:absolute;
+    
+
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+line-height: 25px;
+color: #1B1D23;
+top:-8px;
 
 }
+.image4 span {
+    position:absolute ;
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #1B1D23;
+top: 30px;
+}
+
 
 
   
