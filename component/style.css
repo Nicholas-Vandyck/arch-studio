@@ -5,19 +5,13 @@
     scroll-behavior: smooth;
 }
 body{
-   
-    margin-left: auto;
-    margin-right: auto;
     font-family: 'spartan';
     font-style: normal;
-    background: #FFFFFF;
 }
 
 main{
     margin: 0;
     padding: 0;
-    /* display: flex;
-    flex-direction: column;; */
 }
 
 .line{
@@ -64,6 +58,7 @@ nav a{
     color: #7D828F;
 }
 
+         /* slide show content   */
 .wrapper-container{
     display: flex; 
     flex-direction: column;
@@ -76,7 +71,6 @@ nav a{
    background-color: #1B1D23;
 }
 
-
 .image-overlay{
     display: flex;
     flex-direction: column;
@@ -86,45 +80,43 @@ nav a{
 
  .ui-overlay{
     opacity: 0.7;
-    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) -100%, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%),url(/component/assets/home/desktop/image-hero-paramour.jpg); */
 }
 
-.wrapper-container-desktop{
-    display: none;
+.project-text{
+    position: absolute;
+    top: 15rem;
+    display: flex;
+    flex-direction: column;
+    height: 361px;
+    width: 544px;
 }
 
-.wrapper-paramour{
-    width: 1rem;
+.project-text h1{
+    font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 80px;
     letter-spacing: -2px;
-    color: #FFFFFF;
+    color: #f6f6f6;
 }
 
-.wrapper-london{
-    display: flex;
-    margin-top: -3rem;
-    width: 20rem;
+.project-text p{
+    margin-top: -2rem;
+    width: 445px;
+    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .image-paramour, .mobile-paramour{
     display: none;
 }
 
-.project-text{
-    position: relative;;
-    /* display: flex; */
-    /* margin-top: -15rem; */
-    flex-direction: column;
-}
-
 .arrow-container{
-    /* position: absolute; */
+    display: flex;
+    margin-top: 2.5rem;
     background-color: black;
     width: 15rem;
     height: 3.5rem;
@@ -146,12 +138,18 @@ nav a{
 .icon-arrow{
     margin-left: 1.5rem;
     width: 24px;
+    
+}
+
+.arrow-container:hover{
+    cursor: pointer;
+    background: #60636D;
 }
 
 .slide-show {
     position: absolute;
-    right: 30.5rem;
-    bottom: 5.5rem;
+    left: 4.5rem;
+    margin-top: -3.5rem;
     display: grid;
     grid-column-end: 5rem;
     padding: 1px 0 0 0;
@@ -161,19 +159,31 @@ nav a{
 .slider{
     height: 70px;
     gap: 0.1px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
     text-decoration: none;
     border-color: #ffffff;
     border: none;
 }
 
-.slider:hover{
+.active{
     background: #1B1D23;
-    color: #fff;
+    color: #FFFFFF;
+}
+
+.slider:hover{
+    background: #7D828F;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 
 ul .slider{
     text-decoration: none;
 }
+
+            /* Welcome to Arch Studio   */
 
 .hero-welcome{
     display: flex;
@@ -311,6 +321,7 @@ ul .slider{
 }
 
 .text-lefts{
+    margin-top: 3.5rem;
     width: 169px;
     height: 62px;
 }
@@ -446,71 +457,80 @@ ul .slider{
 .tab-left{
     position: absolute;
     left: 54rem;
-    top: 0.5rem;
+    top: 3.5rem;
 }
 
 @media only screen and (max-width: 768px)
 {
 
-    main{
-        box-sizing: border-box;
-        width: 768;
-        padding: 0;
-        margin: 0;
-    }
     .line{
-        margin: 0 0 0 29px;
-        width: 1px;
+        display: flex;
+        margin: 1rem;
     }
 
     .top-logo{
         display: flex;
-        width: 491px;
-        margin-left: 97px;
+        width: 316px;
     }
 
     .arch-image{
-        width: 86px;
-        height: 40px;
+        display: flex;
+        width: 80px;
+        height: 30px;
+        margin-left: -6rem;
     }
 
     nav{
         display: flex;
-        font-size: 15px;
         width: 316px;
-    }
-
-    .image-paramour{
-        display: flex;
-    }
-
-    .wrapper-container {
-        display: flex;
-        justify-content: center;
-
-        width: 573px;
-        height: 370px;
-        margin: 5rem;
-        
-    }
-
-    .project-text {
-        position: relative;
-        /* display: flex; */
-        margin-top: -15rem;
-        flex-direction: column;
+        margin: -0.5rem 15rem 0 0;
     }
 
     .slide-show{
-        display: none !important;;
+        display: none;
     }
-    .hero-welcome{
-        width: 590px;
-        font-size: 120px;
-        font-weight: 700;
-        line-height: 200px;
-        letter-spacing: -1px;
-        margin-left: 5px;
+
+    .wrapper-container{
+        width: 573px;
+        height: 0%;
+        margin-left: 4rem;
+    }
+
+    .project-text{
+        width: 457px;
+        height: 284px;
+        margin-top: -3rem;
+    }
+
+    .project-text h1{
+        font-size: 50px;
+        width: 457px;
+        line-height: 50px;
+    }
+
+    .project-text p{
+        margin-top: 0.5px;
+        font-size: 10px;
+        line-height: 25px;
+    }
+
+    .arrow-container{
+        margin-top: 0.5px;
+        width: 185px;
+        height: 35px;
+    }
+
+    .arrow-container a{
+        font-size: 10px;
+        align-items: center;
+    }
+
+    .hero-welcome span{
+        width: 581px;
+        height: 140px;
+        font-size: 125px;
+        margin: 1rem 0 0 -5rem;
+        align-items: center;
     }
 
     .hero-welcome-pic{
@@ -518,164 +538,68 @@ ul .slider{
     }
 
     .arc-studio-text{
-        display: flex;
-        width: 446px;
-        margin-top: 0.5rem;
-        margin-left: 97px;
-    }
-
-    .hero-welcome-arc{
-       width: 306px;
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 56px;
-        letter-spacing: -2px;
-        margin-right: 100px;
-    }
-
-    .hero-welcome-txts{
-        width: 572px;
-        height: 275px;
-        margin-left: 97px;
+        margin: 5rem 0 0 -38rem;
     }
 
     .image{
-        width: 576px;
-        margin-left: 97px;
+        width: 573px;
+        height: 550px;
+        margin-left: 2.5rem;
     }
 
     .overlay{
-        display: flex;
-        width: 572px;
-        /* margin-left: 9rem; */
-    }
-
-    .image-text{
-        font-size: 56px;
+        width: 573px;
     }
 
     .wrapper-featured{
-        display: flex;
-        width: 445px;
-        margin-left: 15rem;
+        margin-left: 5rem;
     }
 
-    .wrapper-images{
-        display: flex;
-        flex-direction: column;
+    .image-text{
+        width: 20rem;
+        font-size: 40px;
     }
 
-    .wrapper-image-txt {
-        height: 56px;
-        font-size: 26px;
+    .about{
+        width: 140px;
     }
 
     .wrapper-featured-section{
         width: 576px;
-        margin-inline-start: 6rem;
-    }
-
-    .wrapper-images{
-        width: 576px;
-        margin-left: -3.5rem;
-    }
-
-    .wrapper-images-overlay{
-        width: 576px;
-        height: 240px;
-    }
-
-    .del, .sea, .prototype {
-        display: flex;
-    }
-
-    .wrapper-image-one{
-        display: none;
-    }
-
-    .wrapper-image-two{
-     display: none;
-    }
-
-    .wrapper-image-three{
-       display: none;
-        
-    }
-
-    .wrapper-digit{
-        font-size: 200px;
+        margin-left: 2.3rem;
     }
 
     .wrapper-featured-arrow{
-        width: 580px;
-        margin-left: -3rem;
+        width: 576px;
+        height: 40px;
     }
-    
+
+    .wrapper-image-txt{
+        min-height: 2.5rem;
+        margin-top: -0.1rem;
+        font-size: 40px;
+    }
+
     .text-lefts{
-        width: 153px;
-        height: 56px;
-        margin: 1rem;
+        width: 130px;
     }
 
-    .footer-container{
-        width: 678px;
-        height: 120px;
+    .wrapper-images-overlay{
+        
     }
-
-    .arch-logo-footer{
-        width: 120px;
-        height: 120px;
-    }
-
-    nav a{
-        /* display: flex; */
-        flex-direction: column;;
-        width: 75px;
-    }
-
-    .tab-left{
-        margin-left: -30rem;
-    }
-
-    .arrow-container{
-        position: absolute;
-     
-    }
-
-    .footer-portfolio{
-        text-align: center;
-        margin-left: -1rem;
-        margin-top: -5px;
-        font-size: 12px;
-    }
-
-    footer{
-        margin-left: -9rem;
-    }
-
 
 }
 
 @media only screen and (max-width: 375px){
-
-    nav, .line{
-        display: none;
-    }
-
-    .wrapper-container {
-        display: flex;
-        justify-content: center;
+    main{
+        box-sizing: border-box;
         width: 375px;
-        height: 245px;
-        margin: 5rem;
+        padding: 0;
+        margin: 0;
     }
 
-    .image-paramour{
+    .wrapper-container, .slide-show{
         display: none;
     }
-
-    .mobile-paramour{
-        display: flex;
-    }
-
+ 
 }

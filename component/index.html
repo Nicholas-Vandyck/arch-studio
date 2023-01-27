@@ -32,25 +32,26 @@
     <div class="wrapper-container">
       <img class="ui-overlay fit-div" id="image1" src="./assets/home/desktop/image-hero-paramour.jpg" alt="">
       <div class="image-overlay">
-        <div class="project-text" id="image1">
-          <h1> Project Paramour</h1>
-        <span>
+        <div class="project-text">
+          <h1 id="h1document"> Project Paramour</h1>
+        <p id="pdocument">
           Project made for an art museum near Southwest London. Project Paramour is 
           a statement of bold, modern architecture.
-        </span>
+        </p>
         
-        </div>
         <div class="arrow-container">
           <a href="portfolio.html">See Our Portfolio<img class="icon-arrow" src="./assets/icons/icon-arrow.svg" alt=""></a>
-      </div>
+        </div>
+        </div>
         <ul class="slide-show">
-          <button class="slider">01</button>
-          <button class="slider">02</button>
-          <button class="slider">03</button>
-          <button class="slider">04</button>
+          <button class="slider active" id="active-0" onclick="handleClick(0)" >01</button>
+          <button class="slider" id="active-1"  onclick="handleClick(1)">02</button>
+          <button class="slider"  id = "active-2" onclick="handleClick(2)">03</button>
+          <button class="slider " id="active-3"  onclick="handleClick(3)">04</button>
         </ul>
       </div>
 </div>
+
       <div class="hero-welcome">
         <span>Welcome</span>
       </div>
