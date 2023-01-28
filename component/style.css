@@ -118,7 +118,7 @@ top: 152px;
     position: absolute;
 width: 652px;
 height: 200px;
-left: -120px;
+left: -32px;
 top: -125px;
 color: #EEEFF4;
 font-size: 200px;
@@ -126,6 +126,7 @@ font-weight: 700;
 line-height: 200px;
 text-align: right;
 z-index: 1;
+background-color: blue;
 
 }
 .textcontainer {
@@ -154,13 +155,14 @@ color: #1B1D23;
     position: absolute;
 
     font-weight: 100;
-    font-size: 19px;
+    font-size: 14px;
     line-height: 25px;
-    width: 446px;
-    height:343px ;
+    width: 500px;
+    height:200px ;
     color: #60636D;
     left: 200px;
-    top: 300px;   
+    top: 300px;
+    background-color:blue;   
 }
 
 .footer-nav{
@@ -240,7 +242,7 @@ color: #1B1D23;
     width: 540px;
     height: 568px;
     left: 800px;
-    top: 1072px;  
+    top: 1030px;  
 }
 .leadersimage {
     position: absolute;
