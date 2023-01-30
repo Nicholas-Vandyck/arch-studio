@@ -17,6 +17,7 @@ const pArray = [
     'Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives',
 ];
 
+
 var curIndex = 1;
 var imgDuration = 5000;
 
@@ -70,3 +71,17 @@ const handleClick = (index) =>{
     slideShow()
     }, imgDuration)
 }
+
+const open = document.querySelector(".mob-open")
+const close = document.querySelector(".mob-close")
+const wrapper = document.querySelector(".close").classList;
+
+open.addEventListener("click", () =>{
+    wrapper.toggle("opened");
+    wrapper.toggle("closed");
+});
+
+close.addEventListener("click", () =>{
+    wrapper.toggle("opened");
+    wrapper.toggle("closed");
+});
