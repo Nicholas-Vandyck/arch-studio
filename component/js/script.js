@@ -7,7 +7,7 @@
     const close = document.querySelector(".close-icon");
     navbar.classList.add("active");
     ham.classList.add("inactive");
-    close.classList.remove("inactive");
+    close.classList.add("active");
   }
 
   const closebtn= document.querySelector('.close-icon');
@@ -20,20 +20,3 @@
     closebtn.classList.add("inactive");
     hamburg.classList.remove("inactive");
   }
-
-
-// hamburger.addEventListener(
-//     "click",()=> {
-//         hamburger.classList.toggle("active");
-//         navigate.classList.toggle("active");
-//     }
-// )
-
-// document.querySelectorAll(".btn-links").forEach(
-//     n => n.addEventListener(
-//         "click",()=> {
-//             hamburger.classList.remove("active");
-//             navigate.classList.remove("active");
-//         }
-//     )
-// )
