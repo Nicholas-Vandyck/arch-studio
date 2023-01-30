@@ -7,11 +7,15 @@
 .main{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    background-color: red;
 }
 
 .header{
-    width: 100%;
-    margin: 0 165px 0 56px;
+    width: 80%;
+    /* margin: 0 165px 0 56px; */
+    margin-inline: auto;
+    background-color: blue;
     
 }
 
@@ -25,10 +29,12 @@
 }
 
 .page-label{
+    background: green;
     width: 89px;
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
 
 .line{
@@ -95,10 +101,11 @@
 }
 /* -----------------------main-container styling ----------------------*/
 .grid-container{
-    width: 1110px;
+    /* width: max-content; */
     height: 2330px;
+    /* height: 100%; */
+    width: 100%;
     margin-top: 36px;
-    margin-left: 20px;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
@@ -106,11 +113,15 @@
 }
 
 .grid{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%); */
+    /* background-size: cover; */
+    height: 100%;
 }
 
 .gallery-01{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%),url(/component/assets/portfolio/desktop/image-seraph.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%),url('/component/assets/portfolio/desktop/image-seraph.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-01:hover{
@@ -120,6 +131,8 @@
 
 .gallery-02{
     background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-eebox.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-02:hover{
@@ -128,7 +141,9 @@
 }
 
 .gallery-03{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-federal.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-federal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-03:hover{
@@ -137,7 +152,9 @@
 }
 
 .gallery-04{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-del-sol.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-del-sol.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-04:hover{
@@ -146,7 +163,9 @@
 }
 
 .gallery-05{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-prototype.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-prototype.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-05:hover{
@@ -155,7 +174,9 @@
 }
 
 .gallery-06{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-228b.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-228b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-06:hover{
@@ -164,7 +185,9 @@
 }
 
 .gallery-07{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-edelweiss.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-edelweiss.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-07:hover{
@@ -173,7 +196,9 @@
 }
 
 .gallery-08{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-netcry.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-netcry.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-08:hover{
@@ -182,7 +207,9 @@
 }
 
 .gallery-09{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-hypers.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-hypers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-09:hover{
@@ -191,7 +218,9 @@
 }
 
 .gallery-10{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-sxiv.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-sxiv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-10:hover{
@@ -200,7 +229,9 @@
 }
 
 .gallery-11{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-trinity.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-trinity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-11:hover{
@@ -209,7 +240,9 @@
 }
 
 .gallery-12{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/desktop/image-paramour.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/desktop/image-paramour.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-12:hover{
@@ -239,89 +272,75 @@
 
 .container-path{
     margin: 0 40px;
-    margin-top: 466px;
+    margin-top: 446px;
 }
 /* -----------------------footer styling ----------------------*/
 .footer{
-    margin-left: 162.1px;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer-card{
     display: flex;
     position: relative;
-    width: 61.5rem; 
+    width: 80%; 
     height:164px; 
     margin-top: 5rem;
-    /* margin-left: 20px; */
-    background-color:#EEEFF4;
-}
-
-.flex{
-    display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .footer-logo{ 
     background-color: #1B1D23;
     width: 164px;
     height: 164px;
-}
-.nav-position{
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin: 0 165px 0 56px;
+    justify-content: center;
 }
+
 .footer-logo > svg > path{
     fill: #FFFFFF;
 } 
 
-.arrow-container{
-    display: flex;
-    margin-top: 3rem;
-    background-color: black;
-    width: 15.5rem;
-    height: 3.5rem;
-}
 
-.arrow-container a{
+.footer-background {
+    height: 100%;
+    background-color:#EEEFF4;
+    /* width: calc(80% - 15%); */
+    width: 70%;
     display: flex;
-    text-decoration: none;
-    justify-content: space-between;
-    margin: 1rem;
-    margin-left: 1.5rem;
-    margin-top: 1.2rem;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 25px;
-    color: #FFFFFF;
-}
-
-.icon-arrow{
-    margin-left: 1.5rem;
-    width: 24px;
-}
-
-.portfolio-button{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    background-color: black;
-    width: 15.5rem;
-    height: 3.5rem;
 }
 
-.portfolio-button > a{
-    color: #ffffff;
-    text-decoration: none;
+.nav-position{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: 7%;
 }
 
-.tab-left{
+
+.portfolio-button {
+    background: black;
+    height: max-content;
+    width: max-content;
+    padding: 24px 31px;
     position: absolute;
-    left: 53.8rem;
-    top: 0.5rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1rem;
 }
+
+.portfolio-button a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* ------------tablet view-------------- */
 @media only screen and (max-width: 768px){
@@ -331,80 +350,87 @@
         margin: 0 33px 0 auto;
     }
 
+    .header-card{
+        display: flex;
+        padding-top: 56px;
+        padding: auto;
+    }
+
     .logo {
         margin-right: 34px;
     }
 
+    .page-label{
+        position: relative;
+    }
+    .btn {
+        padding: 7px 10px;
+    }
+
     .grid-container{
-        width: 573px;
+        margin: 0 auto;
+        max-width: 35.813rem;
+        min-width: 100;
         /* width: 100%; */
         height: auto;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        /*flex-direction: column; */
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, 1fr);
+        /* grid-template-rows: repeat(12, 1fr); */
          background-repeat: no-repeat;
     }
 
+    .grid{
+        width: 100%;
+        max-height: 15rem;
+        min-height: auto;
+    }
+
     .gallery-01{
-        height: 240px;
-        /* background-size: cover; */
-        /* background-repeat: no-repeat; */
         background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-seraph.jpg);
     }
     .gallery-02{
-        height: 240px;
         background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-eebox.jpg);
     }
     
     .gallery-03{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-federal.jpg);
     }
     
     .gallery-04{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-del-sol.jpg);
     }
     
     .gallery-05{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-prototype.jpg);
     }
     
     .gallery-06{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-228b.jpg);
     }
     
     
     .gallery-07{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-edelweiss.jpg);
     }
     
     .gallery-08{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-netcry.jpg);
     }
 
     .gallery-09{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-hypers.jpg);
     }
     
     .gallery-10{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-sxiv.jpg);
     }
     
     .gallery-11{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-trinity.jpg);
     }
     
     .gallery-12{
-        height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/tablet/image-paramour.jpg);
     }
 
@@ -415,43 +441,74 @@
     
     /*---------------footer-------------------*/
     .footer{
-        margin-left: 0;
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
-   .footer-card{
+    .footer-card{
         display: flex;
         position: relative;
-        width: 85%; 
-        height:100%; 
-        margin-top: 200px;
-        margin-left: 0;
-        background-color:#EEEFF4;
+        width: 80%; 
+        height:164px; 
+        margin-top: 5rem;
+        align-items: center;
+        /* justify-content: center; */
     }
-
-    .arrow-container{
-        display: flex;
-        margin-top: 3rem;
-        background-color: black;
-    }
-
-    .nav-position {
-        margin: 0 auto 0 76px;
-    }
-
+    
     .footer-logo{ 
         background-color: #1B1D23;
-        width: 120px;
-        height: 120px;
+        width: 164px;
+        height: 164px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-    .tab-left{
-        position: absolute;
-        left: 34rem;
-        /* top: 0.5rem; */
+    
+    .footer-logo > svg > path{
+        fill: #FFFFFF;
     } 
+    
+    
+    .footer-background {
+        height: 100%;
+        background-color:#EEEFF4;
+        /* width: calc(80% - 15%); */
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-position{
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin-left: 7%;
+    }
+    
+    
+    .portfolio-button {
+        background: black;
+        height: max-content;
+        width: max-content;
+        padding: 24px 31px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .portfolio-button a {
+        text-decoration: none;
+        color: white;
+    }
+    
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
     /* -----------------------main-container styling ----------------------*/
     .header{
         width: 100%;
@@ -516,13 +573,14 @@
         display: none;
     }    
     .grid-container{
-        width: 311px;
+        width: max-content;
         height: auto;
         display: flex;
         flex-direction: column;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);
          background-repeat: no-repeat;
+         background: red;
     }
 
     .gallery-01{
@@ -603,7 +661,8 @@
         display: flex;
         flex-direction: row;
         /* margin: 48px 62px; */
-        width: inherit;
+        width: 100%;
+
     }
     
    .footer-card{
