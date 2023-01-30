@@ -19,4 +19,6 @@
     bar.classList.remove("active");
     closebtn.classList.add("inactive");
     hamburg.classList.remove("inactive");
+    // closebtn.classList.add("active");
   }
+

@@ -516,11 +516,7 @@
         opacity: 0;
     }
 
-    .btn-links.active{
-        opacity: 1;
-    }
-
-    .close-icon.active{
+    .btn-links.active, .close-icon.active, .hamburger-icon.active{
         opacity: 1;
     }
 
