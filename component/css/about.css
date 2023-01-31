@@ -105,15 +105,53 @@
 }
 /* -----------------------main-container styling ----------------------*/
 .grid-container{
-    /* width: max-content; */
-    height: 2330px;
-    /* height: 100%; */
     width: 100%;
-    margin-top: 36px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+}
+
+.container{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: row;
+    background-color: maroon;
+}
+
+.image{
+    width: 635px;
+    height: 720px;
+    background-image: url('/component/assets/about/desktop/image-hero.jpg');
+}
+.container-card{
+    width:48%;
+    background-color: #ffffff;
+    height: 503px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    z-index: 2;
+}
+
+.container-card > div{
+    padding-top: 232px;
+    margin-left: 182px;
+    
+}
+.container-card > div > label{
+    font-family: Spartan;
+    font-size: 56px;
+    /* font-weight: 700; */
+    line-height: 56px;
+    letter-spacing: -2px;
+    /* text-align: left; */
+    margin-bottom: 30px;
+}
+
+.container-card > div > p{
+    font-family: Spartan;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 30px;
 }
 
 /* -----------------------footer styling ----------------------*/
