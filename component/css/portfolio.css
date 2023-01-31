@@ -8,15 +8,12 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: red;
 }
 
 .header{
     width: 80%;
     /* margin: 0 165px 0 56px; */
-    margin-inline: auto;
-    background-color: blue;
-    
+    margin-inline: auto; 
 }
 
 .header-card{
@@ -30,7 +27,6 @@
 }
 
 .page-label{
-    background: green;
     width: 89px;
     height: 100%;
     display: flex;
@@ -373,14 +369,12 @@
 
     .grid-container{
         margin: 0 auto;
+        margin-top: 3.5rem;
         max-width: 35.813rem;
-        min-width: 100;
-        /* width: 100%; */
+        /* min-width: 100%; */
         height: auto;
         display: grid;
-        /*flex-direction: column; */
         grid-template-columns: repeat(1, 1fr);
-        /* grid-template-rows: repeat(12, 1fr); */
          background-repeat: no-repeat;
     }
 
@@ -509,7 +503,8 @@
         position: absolute;
         background: #EEEFF4;
         border: 1px solid black;
-        top: 96px;
+        top: 6rem;
+        right: 0;
         height: 235px;
         width: 343px;
         flex-direction: column;
@@ -554,21 +549,19 @@
         display: none;
     }    
     .grid-container{
-        width: auto;
+        /* width: 311px; */
+        width: max-content;
         height: auto;
-        margin: 0 32px;
+        margin-top: 5.438rem;
         display: flex;
         flex-direction: column;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-         background-repeat: no-repeat;
-         gap:24px;
-         background: red;
+        gap: 24px;
+        background: red;
     }
 
     .gallery-01{
-        min-height: 240px;
-        max-height: 100%;
+        height: 240px;
         /* background-size: cover; */
         /* background-repeat: no-repeat; */
         background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/mobile/image-seraph.jpg');
@@ -647,6 +640,8 @@
     .gallery-11{
         height: 240px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url(/component/assets/portfolio/mobile/image-trinity.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .gallery-12{
