@@ -1,0 +1,185 @@
+*{
+    font-family: 'spartan';
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: red;
+}
+
+.header{
+    width: 80%;
+    /* margin: 0 165px 0 56px; */
+    margin-inline: auto;
+    background-color: blue;
+    
+}
+
+.header-card{
+    display: flex;
+    padding-top: 56px;
+    position: relative;
+}
+
+.logo{
+    margin-right: 66.84px;
+}
+
+.page-label{
+    background: green;
+    width: 89px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotated{
+    display: flex;
+    align-items: end;
+    /* justify-content: start; */
+    font-weight: 500;
+    font-size: 15px;
+    color: #C8CCD8;
+    transform: rotate(90deg);
+    letter-spacing: 0.938rem;
+    margin-top: 4.35rem;
+}
+.btn-links{
+    display: flex;
+}
+
+.btn{
+    padding: 7px 20px; 
+    border-color: transparent;
+    color: #C8CCD8;
+    background: #EEEFF4;
+}
+
+.btn>a{
+    padding: 7px 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #C8CCD8;
+}
+
+.btn>a:enabled,.btn>a:hover,.btn>a:active{
+    color: #000000;
+    border-bottom: 1px solid #1B1D23;
+}
+
+.btn>a:active{
+    color: #000000;
+    border-bottom: 1px solid #1B1D23;
+}
+
+.grey{
+    background-color: #FFFFFF;
+}
+
+.hamburger-icon{
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.close-icon{
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+/* -----------------------main-container styling ----------------------*/
+.grid-container{
+    /* width: max-content; */
+    height: 2330px;
+    /* height: 100%; */
+    width: 100%;
+    margin-top: 36px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+/* -----------------------footer styling ----------------------*/
+.footer{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-card{
+    display: flex;
+    position: relative;
+    width: 80%; 
+    height:164px; 
+    margin-top: 5rem;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.footer-logo{ 
+    background-color: #1B1D23;
+    width: 164px;
+    height: 164px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo > svg > path{
+    fill: #FFFFFF;
+} 
+
+
+.footer-background {
+    height: 100%;
+    background-color:#EEEFF4;
+    /* width: calc(80% - 15%); */
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-position{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: 7%;
+}
+
+
+.portfolio-button {
+    background: black;
+    height: max-content;
+    width: max-content;
+    padding: 24px 31px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.portfolio-button a {
+    text-decoration: none;
+    color: white;
+}
+
