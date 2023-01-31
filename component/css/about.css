@@ -8,14 +8,12 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: red;
 }
 
 .header{
     width: 80%;
     /* margin: 0 165px 0 56px; */
     margin-inline: auto;
-    background-color: blue;
     
 }
 
@@ -30,7 +28,6 @@
 }
 
 .page-label{
-    background: green;
     width: 89px;
     height: 100%;
     display: flex;
@@ -112,13 +109,12 @@
     margin-top: 56px;
     display: flex;
     flex-direction: row;
-    background-color: maroon;
 }
 
 .image{
     width: 635px;
     height: 720px;
-    background-image: url('/component/assets/about/desktop/image-hero.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/desktop/image-hero.jpg');
 }
 .container-card{
     width:48%;
@@ -135,23 +131,118 @@
 .container-card > div{
     padding-top: 232px;
     margin-left: 182px;
-    
 }
 .container-card > div > label{
-    font-family: Spartan;
     font-size: 56px;
-    /* font-weight: 700; */
     line-height: 56px;
     letter-spacing: -2px;
-    /* text-align: left; */
     margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -2px;
 }
 
 .container-card > div > p{
-    font-family: Spartan;
     font-size: 15px;
     line-height: 25px;
     margin-top: 30px;
+    width: 445px;
+}
+
+.container > label{
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 200px;
+    letter-spacing: -5px;
+    position: absolute;
+    margin-bottom: -30px;
+    left: 38.4rem;
+    margin-top: 7.2rem;
+    z-index: 10;
+    color: #EEEFF4;
+
+}
+
+.line{
+    height: 1px;
+    width: 65px;
+    background-color: #C8CCD8;
+    margin-bottom: 99px;
+}
+.container-card-01{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+}
+.container-card-01 > div{
+    width: 50%;
+    padding-right: 124px;
+}
+
+.text-01{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2px;
+}
+
+.paragraph>p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 12px;
+}
+
+
+.heritage-image{
+    width: 540px;
+    height: 568px;
+    background-image: url('/component/assets/about/desktop/image-heritage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-01{
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    height: 860px;
+    background-color: maroon;
+}
+
+.image-container{
+     width: 730px;
+    height: auto;
+    position: absolute;
+}
+
+.leader-image{
+    background-color: orangered;
+    border: 1px solid #000000;
+    height: 398px;
+    width: 350px;
+    display: flex;
+   
+}
+
+.image-01{
+    background: url('/component/assets/about/desktop/avatar-jake.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-02{
+    background: url('/component/assets/about/desktop/avatar-thompson.jpg');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+.image-03{
+    background: url('/component/assets/about/desktop/avatar-jackson.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-04{
+    background: url('/component/assets/about/desktop/avatar-maria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* -----------------------footer styling ----------------------*/
