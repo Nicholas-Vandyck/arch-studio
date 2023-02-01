@@ -202,47 +202,101 @@
 }
 
 .container-01{
+    display: flex;
     position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 200px;
     width: 100%;
     height: 860px;
-    background-color: maroon;
 }
 
 .image-container{
-     width: 730px;
-    height: auto;
     position: absolute;
+    right: 0;
+    width: 730px;
+    height: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 58px 26px;
 }
 
 .leader-image{
-    background-color: orangered;
-    border: 1px solid #000000;
     height: 398px;
     width: 350px;
     display: flex;
-   
+    flex-direction: column;
 }
 
 .image-01{
+    position: absolute;
+    width: 350px;
+    height: 320px;
     background: url('/component/assets/about/desktop/avatar-jake.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .image-02{
+    position: absolute;
+    width: 350px;
+    height: 320px;
     background: url('/component/assets/about/desktop/avatar-thompson.jpg');
-    /* background-size: cover; */
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .image-03{
+    position: absolute;
+    width: 350px;
+    height: 320px;
     background: url('/component/assets/about/desktop/avatar-jackson.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .image-04{
+    position: absolute;
+    width: 350px;
+    height: 320px;
     background: url('/component/assets/about/desktop/avatar-maria.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.profile-name{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+}
+
+.image-overlay:hover{
+    opacity: 1;
+}
+.image-overlay> div{
+    width: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.image-overlay> div>div>svg>path{
+    fill: #ffffff;
+}
+
+.label-container{
+    margin-top: 22rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /* -----------------------footer styling ----------------------*/
