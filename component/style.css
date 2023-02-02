@@ -710,7 +710,8 @@ ul .slider{
     .hero-welcome-pic,
     .hero-welcome,
     .text-lefts,
-    .wrapper-digit{
+    .wrapper-digit,
+    .link-tab{
         display: none;
     }
 
@@ -718,8 +719,6 @@ ul .slider{
         margin-top: 0.5rem;
         margin-left: 1rem;
     }
-
-    
 
     .wrapper-container{
         margin-left: -0.5rem;
@@ -890,74 +889,24 @@ ul .slider{
     }
         
         /* mob-menu */
-    .mob-open,
-    .mob-close{
+     .mob-open{
         display: flex;
-        background-color: blue;
-    }
-    .mob-open {
-        display: flex;
-     margin-left: 20rem;
-     padding-top: 3rem;
-    }
-    /* .mob-list{
-        height: 667px;
-        width: 255px;
-        position: fixed;
-        right: 0;
-       top: 0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-   
-        background-color: #014E56;
-        z-index: 2;
-    }
-   
-    .mob-list_item{
-        position: relative;
-        color: #fff;
-        text-decoration: none;
-        top: 9rem;
-        left: -3.5rem;
-    } */
-    /* .button{
-        position: fixed;
-       width: 9.563rem;
-       height: 3rem;
-       border: 2px solid #fff;
-       border-radius: 1.5rem;
-       background: none;
-       font-weight: 700;
-       font-size: 1rem;
-       top: 15rem;
-   }
-    .button a{
-        text-decoration: none;
-        color: #fff;
-    } */
-    
-    .mob-close{
-        background: green;
-        position: fixed;
-        right: 30px;
-        top: 5.3rem;
-        z-index: 1;
+        margin-left: 7rem;
+        margin-top: 1rem;
+        /* background-color: blue; */
+    } 
+
+     .mob-close{
+       
+        margin-left: 7rem;
+        margin-top: 1rem;
+        /* background-color: blue; */
+    } 
+
+    .mob-menu{
+        width: 24px;
+        background-color: red;
     }
     
-    .menu-svg{
-        position: relative;
-        top: 23.8rem;
-        left: 8rem;
-    }
-    
-    /* js */
-    .opened{
-        opacity: 1;
-    }
-    .close{
-        opacity: 0;
-    }
    
 }

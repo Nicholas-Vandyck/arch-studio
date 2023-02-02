@@ -72,16 +72,3 @@ const handleClick = (index) =>{
     }, imgDuration)
 }
 
-const open = document.querySelector(".mob-open")
-const close = document.querySelector(".mob-close")
-const wrapper = document.querySelector(".close").classList;
-
-open.addEventListener("click", () =>{
-    wrapper.toggle("opened");
-    wrapper.toggle("closed");
-});
-
-close.addEventListener("click", () =>{
-    wrapper.toggle("opened");
-    wrapper.toggle("closed");
-});
