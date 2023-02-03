@@ -12,9 +12,7 @@
 
 .header{
     width: 80%;
-    /* margin: 0 165px 0 56px; */
     margin-inline: auto;
-    
 }
 
 .header-card{
@@ -24,7 +22,7 @@
 }
 
 .logo{
-    margin-right: 66.84px;
+    margin-right: 4.178rem;
 }
 
 .page-label{
@@ -46,27 +44,28 @@
     align-items: end;
     /* justify-content: start; */
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     color: #C8CCD8;
     transform: rotate(90deg);
     letter-spacing: 0.938rem;
     margin-top: 4.35rem;
 }
+
 .btn-links{
     display: flex;
 }
 
 .btn{
-    padding: 7px 20px; 
+    padding: 0.43rem 1.25rem; 
     border-color: transparent;
     color: #C8CCD8;
     background: #EEEFF4;
 }
 
 .btn>a{
-    padding: 7px 0;
+    padding: 0.4rem 0;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 25px;
     text-decoration: none;
     color: #C8CCD8;
@@ -88,8 +87,8 @@
 
 .hamburger-icon{
     display: none;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
     z-index: 2;
     right: 0;
@@ -97,8 +96,8 @@
 
 .close-icon{
     display: none;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 /* -----------------------main-container styling ----------------------*/
 .grid-container{
@@ -107,56 +106,58 @@
 
 .container{
     position: relative;
-    margin-top: 56px;
+    margin-top: 3.5rem;
     display: flex;
     flex-direction: row;
-    background-color: maroon;
 }
 
 .image{
-    width: 635px;
-    height: 720px;
+    width: 50%;
+    height: 45rem;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/desktop/image-hero.jpg');
 }
+
 .container-card{
-    width:48%;
+    width:60%;
     background-color: #ffffff;
-    height: 503px;
+    height: 32.688rem;
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 0%;
-    right: 10%;
+    right: 0%;
     z-index: 2;
 }
 
 .container-card > div{
-    margin-top: 182px;
-    margin-left: 182px;
+    /* margin-top: 182px;
+    margin-left: 182px; */
+    margin-top: auto;
+    margin-left: auto;
 }
 .container-card > div > label{
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     letter-spacing: -2px;
-    margin-bottom: 30px;
+    margin-bottom: 1.87rem;
     font-weight: 700;
     letter-spacing: -2px;
 }
 
 .container-card > div > p{
-    font-size: 15px;
-    line-height: 25px;
-    margin-top: 30px;
+    font-size: 1rem;
+    line-height: 1.563rem;
+    margin-top: 1.87rem;
     width: 445px;
 }
 
 .container-card > label{
-    font-size: 200px;
+    font-size: 15vw;
     font-weight: 700;
-    line-height: 200px;
+    line-height: 12.5rem;
     letter-spacing: -5px;
     position: absolute;
-    margin-bottom: -30px;
+    margin-bottom: -1.875rem;
     left: -1.8rem;
     top: -6.5rem;
 
@@ -195,7 +196,6 @@
     margin-top: 12px;
 }
 
-
 .heritage-image{
     width: 540px;
     height: 568px;
@@ -212,39 +212,43 @@
     margin-top: 200px;
     width: 100%;
     height: 860px;
-    background-color: orangered;
 }
 
 .image-container{
     width: 70%;
     /* width: 730px; */
     height: 860px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: olivedrab;
-    /* gap: 58px 26px; */
-    gap: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-wrap: wrap; */
+    /* gap: 26px; */
+    gap: 62px 32px;
 }
 
 .leader-image{
+    position: relative;
     height: 398px;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: azure;
 }
 
 .image-01{
     position: absolute;
-    width: 350px;
+    /* width: 350px; */
+    max-width: 100%;
+    min-width: 100%;
     height: 320px;
     background: url('/component/assets/about/desktop/avatar-jake.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .image-02{
     position: absolute;
-    width: 350px;
+    /* width: 350px; */
+    max-width: 100%;
+    min-width: 100%;
     height: 320px;
     background: url('/component/assets/about/desktop/avatar-thompson.jpg');
     background-size: cover;
@@ -252,15 +256,20 @@
 }
 .image-03{
     position: absolute;
-    width: 350px;
+    /* width: 350px; */
+    max-width: 100%;
+    min-width: 100%;
     height: 320px;
     background: url('/component/assets/about/desktop/avatar-jackson.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .image-04{
     position: absolute;
-    width: 350px;
+    /* width: 350px; */
+    max-width: 100%;
+    min-width: 100%;
     height: 320px;
     background: url('/component/assets/about/desktop/avatar-maria.jpg');
     background-size: cover;
@@ -289,6 +298,7 @@
 .image-overlay:hover{
     opacity: 1;
 }
+
 .image-overlay> div{
     width: 118px;
     display: flex;
@@ -313,6 +323,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .footer-card{
     display: flex;
     position: relative;
@@ -335,7 +346,6 @@
 .footer-logo > svg > path{
     fill: #FFFFFF;
 } 
-
 
 .footer-background {
     height: 100%;
