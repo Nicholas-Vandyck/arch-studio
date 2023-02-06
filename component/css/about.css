@@ -98,7 +98,7 @@
     width: 100%;
 }
 
-.container{
+.container-01{
     position: relative;
     margin-top: 3.5rem;
     display: flex;
@@ -113,8 +113,9 @@
 
 .container-card{
     width:60%;
-    background-color: #ffffff;
-    height: 32.688rem;
+    background-color: #FFFFFF;
+    /* height: 32.688rem; */
+    height: 70%;
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -142,8 +143,10 @@
     font-size: 1rem;
     line-height: 1.563rem;
     margin-top: 1.87rem;
-    width: 445px;
+    max-width: 445px;
+    word-wrap: break-word;
 }
+
 
 .container-card > label{
     font-size: 15vw;
@@ -154,10 +157,8 @@
     margin-bottom: -1.875rem;
     left: -1.8rem;
     top: -6.5rem;
-
     z-index: 10;
     color: #EEEFF4;
-
 }
 
 .line{
@@ -166,13 +167,13 @@
     background-color: #C8CCD8;
     margin-bottom: 100px;
 }
-.container-card-01{
+.container-02{
     display: flex;
     flex-direction: row;
     margin-top: 200px;
     height: 100%;
 }
-.container-card-01 > div{
+.container-02 > div{
     width: 60%;
 }
 
@@ -185,6 +186,7 @@
 .paragraph{
     margin-top: 10%;
     margin-right: 20%;
+    word-wrap: break-word;
 }
 .paragraph>p{
     font-size: 15px;
@@ -203,7 +205,7 @@
     margin-top: 3px;
     width: 30%;
 }
-.container-01{
+.container-03{
     display: flex;
     position: relative;
     flex-direction: row;
@@ -410,13 +412,14 @@
 
     .grid-container{
         margin-top: 3.5rem;
-        max-width: 35.813rem;
+        max-width: 100%;
     }
 
     .image{
         width: 100%;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/tablet/image-hero.jpg');
-        
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .container-card{
@@ -438,7 +441,7 @@
         margin-bottom: 2.2rem;
     }
 
-    .container-card-01 > div {
+    .container-02 > div {
         width: 100%;
         padding-right: 0;
     }
@@ -452,9 +455,8 @@
         display: none;
     }
 
-    .container-01{
+    .container-03{
         width: 100%;
-        background: cornflowerblue;
         flex-direction: row;
     }
 
@@ -495,3 +497,227 @@
     }
 }
 
+@media only screen and (max-width: 480px){
+    /* -----------------------main-container styling ----------------------*/
+    .header{
+        width: 100%;
+        margin: 0;
+    }
+
+    .page-label{
+        display:none;
+    }
+
+    .header-card{
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        padding-left: 32px;
+        padding-top: 32px;
+        /* position: relative; */
+    }
+
+    .btn-links{ 
+        position: absolute;
+        background: #EEEFF4;
+        border: 1px solid black;
+        top: 6rem;
+        right: 0;
+        height: 235px;
+        width: 343px;
+        flex-direction: column;
+        opacity: 0;
+    }
+
+    .btn-links.active, .close-icon.active, .hamburger-icon.active{
+        opacity: 1;
+    }
+
+    .close-icon{
+        opacity: 0;
+    }
+
+    .btn{
+        padding: 7px 20px; 
+        border-color: transparent;
+        margin: 18px 48px;
+    }
+    
+    .btn>a{
+        padding: 0 0;
+        font-size: 18px;
+        color: #1B1D23;
+        ;
+    }
+    
+    .btn>a:enabled,.btn>a:hover,.btn>a:active{
+        color: #C8CCD8;
+        border: none;
+    }
+
+    .hamburger-icon{
+        display: inline;
+    }
+
+    .close-icon{
+        display:flow-root;
+    }
+    
+    .hamburger-icon.inactive, .close-icon.inactive{
+        display: none;
+    }    
+
+    .grid-container{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .container-01{
+        /* height: 100%; */
+        height: 600px;
+    }
+
+    .container-card > div > p{
+        font-size: 1rem;
+        line-height: 1.563rem;
+        margin-top: 1.87rem;
+        max-width: 311px;
+    }
+
+    .image{
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/mobile/image-hero.jpg');
+        /* background: #5bc9ac; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+    }
+
+    .container-card {
+        width: 90%;
+        background-color: #503939;
+        height: 70%;
+        flex-direction: row;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    .container-card > label {
+        display: none;
+    }
+
+    .container-card >div> label {
+        font-size: 40px;
+        font-weight: 700;
+        /* line-height: 48px; */
+        letter-spacing: -1px;
+    }
+
+    .container-card > div {
+        margin-left: 2rem;
+    }
+
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4.5rem;
+    }
+
+    .container-02, .container-03{
+        margin: 0 2rem;
+    }
+    .container-02{
+        margin-top: 4.5rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .container-01{
+        margin-top: 4.5rem;
+    }
+
+    .leader-image{
+        margin-top: 2.6rem;
+    }
+
+
+    /*---------------footer-------------------*/
+    .footer{
+        width: 100%;
+        height: 28rem;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+    .footer-card{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%; 
+        height: max-content;
+        /* height: 23.938rem;  */
+        margin-top: 10.5rem;
+        /* align-items: center; */
+        background-color:#EEEFF4;
+        /* justify-content: center; */
+    }
+    
+    .footer-logo{ 
+        background-color: #1B1D23;
+        width: 164px;
+        height: 164px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -5rem
+    }
+    
+    .footer-logo > svg > path{
+        fill: #FFFFFF;
+    } 
+    
+    
+    .footer-background {
+        height: 100%;
+        background-color:#EEEFF4;
+        margin-top: 6.8rem;
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .btn{
+        text-align: center;
+        padding: 7px 16px; 
+        border-color: transparent;
+        color: #C8CCD8;
+        background: #EEEFF4;
+    }
+    
+    .nav-position{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: max-content;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    
+    
+    .portfolio-button {
+        height: max-content;
+        width: max-content;
+        padding: 24px 31px;
+        position: relative;
+        right: 0;
+        display: flex;
+        margin-top: 2.2rem;
+        /* gap: 1rem; */
+    }
+    
+    .portfolio-button a {
+        text-decoration: none;
+        color: white;
+    }
+    
+}
