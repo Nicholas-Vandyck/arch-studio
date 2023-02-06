@@ -313,7 +313,9 @@
     display: flex;
     flex-direction: column;
 }
-
+.bottom-icon{
+    display: none;
+}
 /* -----------------------footer styling ----------------------*/
 .footer{
     width: 100%;
@@ -463,7 +465,20 @@
         height: auto;
         gap: 1.6rem;
     }
-    
+
+    .image-overlay{
+        display: none;
+    }
+
+    .bottom-icon{
+        /* display: inline; */
+        width: 5.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
     /*---------------footer-------------------*/
     .footer{
         width: 100%;
