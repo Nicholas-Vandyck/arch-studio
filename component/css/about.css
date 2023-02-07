@@ -33,6 +33,12 @@
     position: absolute;
 }
 
+.line-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .rotated{
     display: flex;
     align-items: end;
@@ -42,7 +48,10 @@
     color: #C8CCD8;
     transform: rotate(90deg);
     letter-spacing: 0.938rem;
-    margin-top: 4.35rem;
+    /* margin-top: 4.35rem; */
+    margin-top: 9.35rem;
+    width: 212px;
+    margin-left: -4rem;
 }
 
 .btn-links{
@@ -306,7 +315,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.image-overlay> div>div>svg>path{
+.image-overlay> div > div > a > svg > path{
     fill: #ffffff;
 }
 
@@ -321,10 +330,10 @@
 /* -----------------------footer styling ----------------------*/
 .footer{
     width: 100%;
-    height: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 .footer-card{
@@ -332,7 +341,7 @@
     position: relative;
     width: 80%; 
     height:164px; 
-    margin-top: 5rem;
+    
     align-items: center;
     /* justify-content: center; */
 }
@@ -641,7 +650,7 @@
 
 
     /*---------------footer-------------------*/
-    .footer{
+    .footer{ 
         width: 100%;
         height: 28rem;
         /* display: flex;
