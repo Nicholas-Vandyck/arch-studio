@@ -51,9 +51,9 @@
     letter-spacing: 0.938rem;
     margin-top: 4.35rem;
 }
-.btn-links{
+/* .btn-links{
     display: flex;
-}
+} */
 
 .btn{
     padding: 7px 20px; 
@@ -505,11 +505,11 @@
     .btn-links{ 
         position: absolute;
         background: #EEEFF4;
-        border: 1px solid black;
-        top: 6rem;
+        /* border: 1px solid #EEEFF4; */
+        top: 6.05rem;
         right: 0;
         height: 235px;
-        width: 343px;
+        width: 85%;
         flex-direction: column;
         opacity: 0;
     }
@@ -542,10 +542,12 @@
 
     .hamburger-icon{
         display: inline;
+        margin-right: 0.5rem;
     }
 
     .close-icon{
-        display:flow-root;
+        display: inline;
+        margin-right: 0.5rem;
     }
     
     .hamburger-icon.inactive, .close-icon.inactive{
