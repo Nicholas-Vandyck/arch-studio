@@ -493,11 +493,14 @@
     .header-card{
         justify-content: space-between;
         align-items: center;
-        width: 90%;
+        /* width: 90%; */
         padding-left: 32px;
         padding-top: 32px;
+        padding-bottom: 20px;
+        background-color: #fa5300;
         /* position: relative; */
     }
+
 
     .btn-links{ 
         position: absolute;
