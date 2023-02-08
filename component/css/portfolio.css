@@ -474,8 +474,6 @@
         width: 100%; 
         height:164px; 
         margin-top: 5rem;
-        /* justify-content: center; */
-        background-color: darkgoldenrod;
     }
 }
 
@@ -497,8 +495,6 @@
         padding-left: 32px;
         padding-top: 32px;
         padding-bottom: 20px;
-        background-color: #fa5300;
-        /* position: relative; */
     }
 
 

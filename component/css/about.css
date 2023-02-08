@@ -68,11 +68,13 @@
 .btn>a:enabled,.btn>a:hover,.btn>a:active{
     color: #000000;
     border-bottom: 1px solid #1B1D23;
+    /* transition: 20s ease-in; */
 }
 
 .btn>a:active{
     color: #000000;
     border-bottom: 1px solid #1B1D23;
+    /* transition: 20s ease-in; */
 }
 
 .grey{
