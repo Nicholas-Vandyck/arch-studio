@@ -95,12 +95,14 @@
     position: absolute;
     z-index: 2;
     right: 0;
+    margin-right: 0.5rem;
 }
 
 .close-icon{
     display: none;
     width: 1.5rem;
     height: 1.5rem;
+    margin-right: 0.5rem;
 }
 /* -----------------------main-container styling ----------------------*/
 .grid-container{
@@ -509,6 +511,7 @@
     .header{
         width: 100%;
         margin: 0;
+        
     }
 
     .page-label{
@@ -518,20 +521,22 @@
     .header-card{
         justify-content: space-between;
         align-items: center;
-        width: 90%;
+        /* width: 90%; */
         padding-left: 32px;
         padding-top: 32px;
+        padding-bottom: 20px;
+        background-color: #fa5300;
         /* position: relative; */
     }
 
     .btn-links{ 
         position: absolute;
         background: #EEEFF4;
-        border: 1px solid black;
-        top: 6rem;
+        /* border: 1px solid #EEEFF4; */
+        top: 6.05rem;
         right: 0;
         height: 235px;
-        width: 343px;
+        width: 85%;
         flex-direction: column;
         opacity: 0;
     }
@@ -655,6 +660,9 @@
         margin-top: 2.6rem;
     }
 
+    .btn-links{
+        z-index: 10;
+    }
 
     /*---------------footer-------------------*/
     .footer{ 
