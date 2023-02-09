@@ -1,0 +1,739 @@
+*, ::before ::after{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'spartan';
+    font-style: normal;
+}
+
+main{
+    margin: 0px;
+    padding: 0px;;
+}
+
+.line{
+    display: flex;;
+    background-color: #C8CCD8;
+    width: 0.063rem;
+    height: 6.5rem;
+    margin-left: 64px;
+    margin-top: -0.5rem;
+}
+
+.rotated{
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    color: #C8CCD8;
+    transform: rotate(90deg);
+    letter-spacing: 0.938rem;
+    margin-top: 14rem;
+    margin-left: -5.5rem;
+}
+
+.top-logo{
+    display: flex;
+    margin-inline-start: 150px;
+    margin-top: -3rem;
+}
+
+.arch-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+}
+
+.link-tab{
+    margin-top: -3rem;
+    margin-left: 18rem;
+}
+
+nav a{
+    width: 10rem;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-around;
+    color: #7D828F;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: #1B1D23;
+}
+
+.mob-open, 
+.mob-close{
+    display: none;
+}
+
+.arrow-container{
+    display: flex;
+    margin-top: 2.5rem;
+    background-color: black;
+    width: 15rem;
+    height: 3.5rem;
+}
+
+.arrow-container a{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.icon-arrow{
+    margin-left: 1.5rem;
+    width: 24px;
+}
+
+.arrow-container:hover{
+    cursor: pointer;
+    background: #60636D;
+}
+
+.first-image-container{
+    display: flex;
+    height: 720px;
+    margin-left: 9.3rem;
+    margin-top: 2rem;
+}
+
+.hero-image{
+    width: 635px;
+    height: 720px;
+}
+
+.image-container{
+    width: 793px;
+    height: 503px;
+    margin-top: 13.7rem;
+    margin-left: -9rem;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+.image-container span{
+    display: flex;
+    margin-top: -6.5rem;
+    margin-left: -12.5rem;
+    width: 822px;
+    height: 200px;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px;
+    text-align: right;
+    letter-spacing: -5px;
+    color: #EEEFF4;
+    z-index: 1;
+}
+
+.image-container-text{
+    display: flex;
+    margin-left: 10rem;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 446px;
+    height: 343px;
+}
+
+.image-container-text h1{
+    display: flex;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+    color: #1B1D23;
+}
+
+.image-container-text p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #60636D;
+}
+
+.dash{
+    margin: 9.3rem;
+    width: 65px;
+    height: 1px;
+}
+
+.contact-details-container{
+    display: flex;
+    height: 320px;
+    margin-left: 9.3rem;
+}
+
+.contact-details-container h1{
+    width: 350px;
+    height: 112px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+    color: #1B1D23;
+}
+
+.office-container-one{
+    margin: 2rem;
+    width: 450px;
+}
+
+.office-container-one h2{
+    width: 350px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 35px;
+    color: #60636D;
+}
+
+.office-container-one h3{
+    width: 276px;
+    height: 105px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 35px;
+    color: #60636D;
+}
+
+.office-container-one h4{
+    display: flex;
+    font-size: 15px;
+    line-height: 25px;
+    color: #1B1D23;
+}
+
+.office-container-one h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.desktop-map{
+    margin-top: 5rem;
+    margin-inline-start: 10rem;
+}
+
+.tablet-map, .mobile-map{
+    display: none;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+    width: 1110px;
+    height: 100%;
+    margin-inline-start: 10rem;
+}
+
+.contact-container h1{
+    width: 350px;
+    height: 112px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+    color: #1B1D23;
+}
+
+form{
+    width: 100%;
+}
+
+input,
+textarea{
+    width: 730px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 0.1rem;
+    margin: 1.5rem;
+    resize: none;
+}
+
+input{
+    caret-color: #1B1D23;
+}
+
+input[type=text]{
+    padding-left: 1rem;
+    height: 3.8rem;
+    font-size: 18px;
+}
+
+
+input[type=text]::placeholder{
+    width: 75px;
+    height: 22px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3125px;
+    color: #C8CCD8;
+}
+
+input[type=text]:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #1B1D23;
+}
+
+input[type=email]{
+    padding-left: 1rem;
+    height: 3rem;
+}
+
+input[type=email]::placeholder{
+    width: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.3125px;
+    color: #C8CCD8;
+}
+
+textarea[type=message]{
+    font-size: 20px;
+    font-style: normal;
+    padding-left: 1rem;
+    font-weight: small;
+    line-height: 22px;
+}
+
+.e-message,
+.e-mail, 
+.name{
+    border-bottom: 1px solid #1B1D23;
+}
+
+textarea[type=message]::placeholder{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.3125px;
+    color: #C8CCD8;
+    margin-top: 2rem;
+}
+
+.error{
+    position: relative;
+    width: 9rem;
+    height: 0;
+    top: -4rem;
+    font-weight: 700;
+    font-size: 15px;
+    font-size: 15px;
+    line-height: 17px;
+    margin-left: 38rem;
+    color: #DF5656;
+    letter-spacing: -0.234375px;
+    
+}
+
+.alert{
+    border-bottom: 2px solid #DF5656;  
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea[type="message"]::-webkit-input-placeholder {
+  color: var(--placeholder-color, #C8CCD8);
+}
+
+button{
+    margin-top: 1.8rem;
+    width: 80px;
+    height: 80px;
+    background: #1B1D23;
+    margin-left: 43.4rem;
+}
+
+button:hover{
+    background: #60636D;
+    cursor: pointer;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: 8.8rem;
+    background-color:#EEEFF4;
+    box-sizing: border-box;
+    width: 984px; 
+    height:164px; 
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arch-logo-footer {
+    width: 164px;
+    height: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1D23;
+}
+
+.arch-logo-footer > svg{
+    fill: #FFFFFF;
+}
+
+.tab-left{
+    position: absolute;
+    margin-left: 71rem;
+}
+
+@media only screen and (max-width: 820px) and (min-width: 768px){
+    .line{
+        margin-left: 0.9rem;
+    }
+
+    .rotated{
+        margin-left: -5.4rem;
+    }
+
+    .mob-menu{
+        width: 650px;
+        height: 40px;
+        margin-left: -6rem;
+    }
+
+    nav a{
+        width: 100px;
+    }
+
+    .top-logo{
+        margin-left: 3.5rem;
+    }
+
+    .link-tab{
+        margin-top: -2.8rem;
+        margin-left: 18rem;
+    }
+
+    .hero-image{
+        width: 571px;
+        height: 720px;
+        margin-left: -6rem;
+    }
+
+    .image-container{
+        margin-left: -25rem;
+    }
+
+    .image-container span{
+        width: 330px;
+        height: 200px;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left: 0.1rem;
+        letter-spacing: -3px;
+    }
+
+    .image-container-text{
+        display: flex;
+        width: 450px;
+        margin-left: 3rem;
+    }
+
+    .image-container-text h1{
+        width: 370px;
+        font-size: 50px;
+        line-height: 56px;
+        letter-spacing: -2px;
+    }
+
+    .image-container-text p{
+        width: 370px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .dash{
+        margin-left: 3.5rem;
+    }
+
+    .contact-details-container{
+        display: flex;
+        flex-direction: column;
+        width: 685px;
+        height: 615px;
+        margin-left: 2.5rem;
+    }
+
+    .contact-details-container h1{
+        width: 446px;
+    }
+
+    .office-container-one{
+        margin-left: 0.1rem;
+    }
+
+    .office-container-one h4{
+        display: flex;
+        margin-inline: 26rem;
+        margin-top: -5rem;
+        width: 165px;
+    }
+
+    .desktop-map, .mobile-map{
+        display: none;
+    }
+
+    .tablet-map{
+        display: flex;
+        margin: 3rem;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 572px;
+        margin-left: 3rem;
+    }
+
+    .contact-container h1{
+        height: 56px;
+        width: 455px;
+    }
+
+    form{
+        width: 375px;
+    }
+
+    input, textarea{
+        width: 522px;
+    }
+
+    button{
+        margin-left: 30.4rem;
+    }
+
+    .footer-container{
+        height: 120px;
+        width: 620px;
+        justify-content: baseline;
+    }
+
+    .arch-logo-footer{
+        height: 120px;
+    }
+
+    .error{
+        margin-left: 27rem;
+    }
+
+    footer{
+        margin-left: -9.5rem;
+        margin-top: 15rem;
+    }
+
+    nav a{
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .arrow-container a{
+        font-size: 10px;
+    }
+
+    .tab-left{
+        width: 190px;
+        height: 50px;
+        margin-left: 40rem;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) { 
+
+    .desktop-map, 
+    .tablet-map, 
+    .line,
+    .link-tab{
+        display: none;
+    }
+
+    .mobile-map{
+        display: flex;
+    }
+
+    .top-logo{
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .mob-menu{
+        height: 1rem;
+    }
+
+    .mob-open{
+        display: flex;
+    }
+
+    .mob-close, .mob-open{
+        margin-left: 19rem;
+        margin-top: -2rem;
+    }
+
+    .mob-list-item{
+        display: flex;
+        margin-top: 2rem;
+        color: #1B1D23;
+    }
+
+    .link-tab{
+        position: absolute;
+        width: 325px;
+        height: 235px;
+        margin-left: 1.1rem;
+        margin-top: 1.7rem;
+        background: #EEEFF4;
+    }
+
+    .first-image-container{
+        display: flex;
+        width: 382px;
+        height: 455px;
+        margin-left: -2.5rem;
+    }
+
+    .image-container{
+        height: 213px;
+    }
+
+    .hero-image{
+        height: 433px;
+    }
+
+    .image-container span{
+        display: none;
+    }
+
+    .image-container-text{
+        width: 401px;
+        height: 355px;
+        margin-left: -17rem;
+        margin-top: -2rem;
+        background: #FFFFFF;
+    }
+
+    .image-container-text h1{
+        width: 253px;
+        font-size: 38px;
+        margin-top: 4rem;
+        line-height: 48px;
+        letter-spacing: -1px;
+    }
+
+    .image-container-text p{
+        width: 311px;
+        margin-left: 3.9rem;
+        margin-top: -0.7px;
+    }
+
+    .dash{
+        margin-left: 0.5rem;
+    }
+
+    .contact-details-container{
+        display: flex;
+        flex-direction: column;
+        width: 351px;
+        height: 760px;
+        margin-left: -1.5rem;
+    }
+
+    .office-container-one h2{
+        width: 100px;
+    }
+
+    .contact-details-container h1{
+        width: 17rem;
+        margin-left: 1.7rem;
+    }
+
+    .office-container-one {
+        width: 170px;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        width: 351px;
+        height: 760px;
+        margin-left: -1.5rem;
+    }
+
+    .contact-container h1{
+        margin-left: 1.9rem;
+        width: 240px;
+    }
+
+    .mobile-map{
+        margin-top: 4rem;
+    }
+
+    input, textarea{
+        width: 308px;
+    }
+
+    button{
+        margin-left: 17rem;
+    }
+
+    .error{
+        margin-left: 14rem;
+    }
+
+    footer{
+        display: flex;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 362px;
+        height: 400px;
+        margin-left: -1rem;
+    }
+
+    .arch-logo-footer{
+        margin: 6rem;
+        margin-top: -5rem;
+    }
+
+    .tab-left{
+        margin-left: -3.5rem;
+        margin-top: 15rem;
+    }
+
+    .footer-nav{
+        margin-left: 3rem;
+        margin-top: -2rem;
+    }
+}
