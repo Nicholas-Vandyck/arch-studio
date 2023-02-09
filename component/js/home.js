@@ -1,8 +1,8 @@
 const imgArray = [
-    './assets/home/desktop/image-hero-paramour.jpg',
-    './assets/home/desktop/image-hero-federal.jpg',
-    './assets/home/desktop/image-hero-seraph.jpg',
-    './assets/home/desktop/image-hero-trinity.jpg',
+    '/component/assets/home/desktop/image-hero-paramour.jpg',
+    '/component/assets/home/desktop/image-hero-federal.jpg',
+    '/component/assets/home/desktop/image-hero-seraph.jpg',
+    '/component/assets/home/desktop/image-hero-trinity.jpg',
 ];
 const h1Array = [
     'Project Paramour',

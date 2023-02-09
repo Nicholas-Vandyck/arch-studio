@@ -53,7 +53,7 @@ main{
 }
 
 nav a{
-    width: 10rem;
+    width: 13rem;
     font-weight: 700;
     font-size: 15px;
     line-height: 25px;
@@ -68,6 +68,30 @@ nav a:hover{
     cursor: pointer;
     color: #1B1D23;
 }
+
+.items{
+    width: 135px;
+}
+
+.item{
+    width: 65px;
+    color: #1B1D23;
+    text-decoration: none;
+    position: relative;
+    left: 35px;
+    pointer-events: none;
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+    right: 0;
+    height: 1px;
+    background-color: #1B1D23;
+    width: 24px;
+  }
 
 .mob-open, 
 .mob-close{
@@ -373,7 +397,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     margin-top: 5rem;
-    margin-left: 8.8rem;
+    margin-left: 10rem;
     background-color:#EEEFF4;
     box-sizing: border-box;
     width: 984px; 
@@ -393,6 +417,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     background-color: #1B1D23;
+    margin-left: -1rem;
 }
 
 .arch-logo-footer > svg{
@@ -401,7 +426,7 @@ button:hover{
 
 .tab-left{
     position: absolute;
-    margin-left: 71rem;
+    margin-left: 75rem;
 }
 
 @media only screen and (max-width: 820px) and (min-width: 768px){
@@ -562,7 +587,7 @@ button:hover{
     .tab-left{
         width: 190px;
         height: 50px;
-        margin-left: 40rem;
+        margin-left: 41.9rem;
         margin-top: 1rem;
         align-items: center;
         justify-content: center;
@@ -574,7 +599,8 @@ button:hover{
     .desktop-map, 
     .tablet-map, 
     .line,
-    .link-tab{
+    .link-tab,
+    .item::after{
         display: none;
     }
 
@@ -609,10 +635,11 @@ button:hover{
     .link-tab{
         position: absolute;
         width: 325px;
-        height: 235px;
+        height: 255px;
         margin-left: 1.1rem;
         margin-top: 1.7rem;
         background: #EEEFF4;
+        z-index: 2;
     }
 
     .first-image-container{
@@ -712,6 +739,16 @@ button:hover{
 
     footer{
         display: flex;
+    }
+
+    nav a{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+
+    .item{
+        margin-left: 1rem;
     }
 
     .footer-container {
