@@ -87,6 +87,7 @@ nav a:hover{
     border: 1px;
     margin-inline-start: 9rem;
     background-color: #1B1D23;
+    transition: ease-in-out;
 }
 
 .image-overlay{
