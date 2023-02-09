@@ -76,16 +76,32 @@
 
 .btn>a:enabled,.btn>a:hover,.btn>a:active{
     color: #000000;
-    border-bottom: 1px solid #1B1D23;
 }
 
 .btn>a:active{
     color: #000000;
-    border-bottom: 1px solid #1B1D23;
 }
 
 .grey{
     background-color: #FFFFFF;
+}
+
+.item>a{
+    position: relative;
+    color: #1B1D23;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.item>a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 1px;
+    background-color: #1B1D23;
+    width: 24px;
 }
 
 .hamburger-icon{
@@ -544,6 +560,11 @@
         opacity: 1;
     }
 
+    .item>a::after{
+        background-color: #EEEFF4;
+    }
+    
+    
     .close-icon{
         opacity: 0;
     }
