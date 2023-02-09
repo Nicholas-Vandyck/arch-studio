@@ -530,6 +530,10 @@
         opacity: 1;
     }
 
+    .item>a::after{
+        background-color: #EEEFF4;
+    }
+
     .close-icon{
         opacity: 0;
     }
