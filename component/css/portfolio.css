@@ -558,12 +558,12 @@
 
     .hamburger-icon{
         display: inline;
-        margin-right: 0.5rem;
+        margin-right: 2rem;
     }
 
     .close-icon{
         display: inline;
-        margin-right: 0.5rem;
+        margin-right: 2rem;
     }
     
     .hamburger-icon.inactive, .close-icon.inactive{
