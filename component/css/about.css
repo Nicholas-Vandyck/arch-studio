@@ -67,7 +67,7 @@
 .btn>a{
     padding: 0.4rem 0;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 25px;
     text-decoration: none;
     color: #C8CCD8;
@@ -330,6 +330,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* color: #000; */
 }
 .image-overlay> div > div > a > svg > path{
     fill: #ffffff;
@@ -357,9 +358,7 @@
     position: relative;
     width: 80%; 
     height:164px; 
-    
     align-items: center;
-    /* justify-content: center; */
 }
 
 .footer-logo{ 
