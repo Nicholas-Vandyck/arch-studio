@@ -110,14 +110,14 @@
     position: absolute;
     z-index: 2;
     right: 0;
-    margin-right: 0.5rem;
+    margin-right: 2rem;
 }
 
 .close-icon{
     display: none;
     width: 1.5rem;
     height: 1.5rem;
-    margin-right: 0.5rem;
+    margin-right: 2rem;
 }
 /* -----------------------main-container styling ----------------------*/
 .grid-container{
