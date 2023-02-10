@@ -272,7 +272,7 @@ ul .slider{
     margin-top: 15rem;
     background-size: cover;
     background-repeat: no-repeat;
-    background: url(/assets/home/desktop/image-small-team.jpg);
+    background: url(/component/assets/home/desktop/image-small-team.jpg);
     justify-content: center;
     align-items: center center;
 }
@@ -377,7 +377,7 @@ ul .slider{
     display: grid;
     width: 350px;
     height: 560px;
-    background-image: url(/assets/portfolio/desktop/image-del-sol.jpg);
+    background-image: url(/component/assets/portfolio/desktop/image-del-sol.jpg);
 }
 
 .wrapper-image-two{
@@ -385,7 +385,7 @@ ul .slider{
     width: 350px;
     height: 560px;
     background-repeat: no-repeat;
-    background-image: url(/assets/portfolio/desktop/image-228b.jpg);
+    background-image: url(/component/assets/portfolio/desktop/image-228b.jpg);
 }
 
 .wrapper-image-three{
@@ -393,7 +393,7 @@ ul .slider{
     width: 350px;
     height: 560px;
     background-repeat: no-repeat;
-    background-image: url(/assets/portfolio/desktop/image-prototype.jpg);
+    background-image: url(/component/assets/portfolio/desktop/image-prototype.jpg);
 }
 
 .wrapper-digit{
