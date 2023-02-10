@@ -385,7 +385,7 @@
     }
 
     .grid-container{
-        margin: 0 auto;
+        /* margin: 0 auto; */
         margin-top: 3.5rem;
         max-width: 35.813rem;
         /* min-width: 100%; */
@@ -574,6 +574,7 @@
         /* width: 311px; */
         width: max-content;
         height: auto;
+        margin: 0 auto;
         margin-top: 5.438rem;
         display: flex;
         flex-direction: column;
