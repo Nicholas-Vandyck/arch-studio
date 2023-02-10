@@ -5,8 +5,10 @@
   function display(){
     const navbar = document.querySelector(".btn-links");
     const close = document.querySelector(".close-icon");
+
     navbar.classList.add("active");
     ham.classList.add("inactive");
+    close.classList.remove("inactive");
     close.classList.add("active");
   }
 
@@ -18,6 +20,7 @@
     const hamburg = document.querySelector(".hamburger-icon");
     bar.classList.remove("active");
     closebtn.classList.add("inactive");
+    closebtn.classList.remove("active");
     hamburg.classList.remove("inactive");
     // closebtn.classList.add("active");
   }
