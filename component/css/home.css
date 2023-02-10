@@ -1,0 +1,928 @@
+*, ::before ::after{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'spartan';
+    font-style: normal;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+.mob-open, 
+.mob-close{
+    display: none;
+}
+
+.line{
+    display: flex;;
+    background-color: #C8CCD8;
+    width: 0.063rem;
+    height: 6.5rem;
+    margin-left: 64px;
+    margin-top: -0.5rem;
+}
+
+.rotated{
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    color: #C8CCD8;
+    transform: rotate(90deg);
+    letter-spacing: 0.938rem;
+    margin-top: 14rem;
+    margin-left: -3.1rem;
+}
+
+.top-logo{
+    display: flex;
+    margin-inline-start: 150px;
+    margin-top: -3rem;
+}
+
+.arch-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+}
+
+nav a{
+    width: 10rem;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-around;
+    color: #7D828F;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: #1B1D23;
+}
+
+.link-tab{
+    display: flex;
+    margin-top: -3rem;
+    margin-left: 18rem; 
+}
+
+         /* slide show content   */
+.wrapper-container{
+    display: flex; 
+    flex-direction: column;
+    margin: 3rem;
+    margin-top: 4.5rem;
+    width: 1110px;
+    height: 720px;
+    mix-blend-mode: normal;
+    border: 1px;
+    margin-inline-start: 9rem;
+    background-color: #1B1D23;
+    transition: ease-in-out;
+}
+
+.image-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui-overlay{
+    opacity: 0.7;
+}
+
+.project-text{
+    position: absolute;
+    top: 15rem;
+    display: flex;
+    flex-direction: column;
+    height: 361px;
+    width: 544px;
+}
+
+.project-text h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: #f6f6f6;
+}
+
+.project-text p{
+    margin-top: -2rem;
+    width: 445px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.image-paramour, 
+.mobile-paramour{
+    display: none;
+}
+
+.arrow-container{
+    display: flex;
+    margin-top: 2.5rem;
+    background-color: black;
+    width: 15rem;
+    height: 3.5rem;
+}
+
+.arrow-container a{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.icon-arrow{
+    margin-left: 1.5rem;
+    width: 24px;
+}
+
+.arrow-container:hover{
+    cursor: pointer;
+    background: #60636D;
+}
+
+.slide-show {
+    position: absolute;
+    left: 4.5rem;
+    margin-top: -3.5rem;
+    display: grid;
+    grid-column-end: 5rem;
+    padding: 1px 0 0 0;
+    grid-template-columns: 70px 70px 70px 70px;
+}
+
+.slider{
+    height: 70px;
+    gap: 0.1px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-color: #ffffff;
+    border: none;
+}
+
+.active{
+    background: #1B1D23;
+    color: #FFFFFF;
+}
+
+.slider:hover{
+    background: #7D828F;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+ul .slider{
+    text-decoration: none;
+}
+
+            /* Welcome to Arch Studio   */
+
+.hero-welcome{
+    display: flex;
+    margin-top: 6rem;
+    margin-left: 8.5rem;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px;
+    letter-spacing: -6px;
+    color: #EEEFF4;
+    z-index: 5;
+}
+
+.arc-studio-text{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 120px;
+    width: 1110px;
+    margin: 9rem;
+    margin-top: -6.5rem;
+}
+
+.hero-welcome-pic{
+    display: flex;
+    width: 350px;
+    height: 568px;
+    padding: 10px 16px 20px 10px;
+    z-index: -1;
+}
+
+.arc-studio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 446px;
+    margin-top: -4rem;
+}
+
+.hero-welcome-arc{
+    width: 446px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+    color: #1B1D23;
+}
+
+.hero-welcome-txts {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: black;
+}
+
+.image{
+    display: flex;
+    width: 1110px;
+    height: 550px;
+    background-position: center center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-inline-start: 9rem;
+    margin-top: 15rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(/component/assets/home/desktop/image-small-team.jpg);
+    justify-content: center;
+    align-items: center center;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1110px;
+    height: 550px;
+    background: hsla(0, 0%, 4%, 0.673);
+}
+
+.wrapper-featured{
+    display: flex;
+    flex-direction: column;
+    margin-right: 285px;
+}
+
+.arrow{
+    height: 224px;
+}
+
+.arrow :hover{
+    background: #60636D;
+}
+
+.image-text {
+    display: flex;
+    width: 445px;
+    height: 224px;
+    font-size: 56px;
+    line-height: 56px;
+    font-display: 5rem;
+    color: rgb(255, 250, 250) !important;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.text-down a{
+    display: flex;
+    width: 123px;
+    height: 25px;
+}
+
+.about {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #ffffff;
+    width: 187px;
+    height: 72px;
+}
+
+.wrapper-featured-section{
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 9rem;
+    width: 1110px;
+    margin-top: 5rem;
+}
+
+.wrapper-featured-arrow{
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+}
+
+.text-lefts{
+    margin-top: 3.5rem;
+    width: 169px;
+    height: 62px;
+}
+
+.wrapper-image-txt{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+    color: #1B1D23;
+}
+
+.wrapper-images{
+    display: grid;
+    width: 1110px;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-images-overlay{
+    width: 350px;
+    height: 560px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) -100%, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
+}
+
+.wrapper-image-one{
+    display: grid;
+    width: 350px;
+    height: 560px;
+    background-image: url(/component/assets/portfolio/desktop/image-del-sol.jpg);
+}
+
+.wrapper-image-two{
+    display: grid;
+    width: 350px;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-image: url(/component/assets/portfolio/desktop/image-228b.jpg);
+}
+
+.wrapper-image-three{
+    display: grid;
+    width: 350px;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-image: url(/component/assets/portfolio/desktop/image-prototype.jpg);
+}
+
+.wrapper-digit{
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px; 
+    color: #fafbff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-top: 1.7rem;
+}
+
+.digit-right{
+    margin-inline: 17.6rem;
+}
+
+.digit-right-shift{
+    margin-inline: 14rem;
+}
+
+.digit-right-shifts{
+    margin-inline: 14.5rem;
+}
+
+.wrapper-image-text{
+    display: flex;
+    margin-inline: 2rem;
+    margin-top: 15rem;
+    width: 9rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.wrapper-image-project{
+    display: flex;
+    margin-left: 2rem;
+    width: 10rem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: 8.8rem;
+    background-color:#EEEFF4;
+    box-sizing: border-box;
+    width: 984px; 
+    height:164px; 
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arch-logo-footer {
+    width: 164px;
+    height: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1D23;
+}
+
+.arch-logo-footer > svg{
+    fill: #FFFFFF;
+}
+
+.tab-left{
+    position: absolute;
+    margin-left: 71rem;
+}
+
+.rectangle, 
+.text-left-txt,
+.mob-open,
+.mob-close{
+    display: none;
+}
+
+@media only screen and (max-width: 820px) and (min-width: 768px)
+{
+
+    .slide-show, 
+    .rectangle, 
+    .text-left-txt,
+    .open-mob,
+    .close-mob{
+        display: none;
+    }
+
+    .line{
+        display: flex;
+        margin: 1rem;
+        margin-top: -2rem;
+    }
+
+    .top-logo{
+        display: flex;
+        width: 316px;
+        margin-left: 12rem;
+    }
+
+    .arch-image{
+        display: flex;
+        width: 80px;
+        height: 30px;
+        margin-left: -6rem;
+    }
+
+    .link-tab{
+        margin-top: -2.8rem;
+        margin-left: 12rem;
+    }
+    .wrapper-container{
+        width: 573px;
+        margin-left: 5.5rem;
+        margin-top: 4.5rem;
+    }
+
+    #image1{
+        height: 720px;
+    }
+
+    .project-text{
+        margin-top: 6rem;
+        width: 457px;
+        height: 361px;
+        justify-content: center;
+    }
+
+    .project-text h1{
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .project-text p{
+        margin-top: 0.5px;
+        font-size: 15px;
+    }
+
+    .arrow-container{
+        width: 185px;
+        height: 35px;
+    }
+
+    .arrow-container a{
+        font-size: 10px;
+        align-items: center;
+    }
+
+    .hero-welcome span{
+        width: 581px;
+        height: 140px;
+        font-size: 125px;
+        margin: 1rem 0 0 -4rem;
+        align-items: center;
+    }
+
+    .hero-welcome-pic{
+        display: none;
+    }
+
+    .hero-welcome-arc{
+        margin-left: 2rem;
+    }
+
+    .hero-welcome-txts{
+        margin-left: 1rem;
+    }
+
+    .arc-studio-text{
+        margin: 5rem 0 0 -38rem;
+    }
+
+    .image{
+        width: 573px;
+        height: 550px;
+        margin-left: 5rem;
+    }
+
+    .overlay{
+        width: 573px;
+    }
+
+    .image-text{
+        width: 20rem;
+        font-size: 40px;
+    }
+
+    .wrapper-featured{
+        margin-left: 5rem;
+    }
+
+    .about{
+        width: 140px;
+    }
+
+    .wrapper-featured-section{
+        width: 576px;
+        margin-left: 3rem;
+    }
+
+    .wrapper-featured-arrow{
+        width: 576px;
+        margin-left: 2rem;
+    }
+
+    .wrapper-image-txt{
+        min-height: 2.5rem;
+        margin-top: -0.1rem;
+        font-size: 40px;
+    }
+
+    .text-lefts{
+        margin-top: 0.9rem;
+        width: 130px;
+    
+    }
+
+    .wrapper-images{
+        display: flex;
+        width: 578px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        margin-left: 2rem;
+    }
+
+    .wrapper-image-one{
+        width: 100%;
+        height: 240px;
+        background-image: url(/component/assets/portfolio/tablet/image-del-sol.jpg);
+        background-size: cover;
+        background-position: 0%;
+    
+    }
+
+    .wrapper-image-two{
+        width: 100%;
+        height: 240px;
+        background-image: url(/component/assets/portfolio/tablet/image-228b.jpg);
+        background-size: cover;
+        background-position: 0%;
+    
+    }
+
+    .wrapper-image-three{
+        width: 100%;
+        height: 240px;
+        background-image: url(/component/assets/portfolio/tablet/image-prototype.jpg);
+        background-size: cover;
+        background-position: 0%;
+    
+    }
+
+    .wrapper-images-overlay{
+        width: 579px;
+        height: 240px;
+    }
+
+    .wrapper-digit{
+        display: flex;
+        width: 84px;
+        height: 0;
+       
+    }
+
+    .digit-right{
+         margin-left: 30rem;
+    }
+
+    .digit-right-shift,  
+    .digit-right-shifts{
+        margin-left: 27rem;
+    }
+
+    .wrapper-image-text{
+        margin-top: 1rem;
+    }
+
+    .footer-container{
+        display: flex;
+        width: 700px;
+        height: 120px;
+        justify-content: center;
+        margin-left: -6rem;
+        margin-top: 10rem;
+    }
+
+    .arch-logo-footer{
+        height: 120px;
+    }
+
+    ul{
+        display: flex;
+        width: 316px;
+        flex-direction: row;
+    }
+
+    .tab-left{
+        margin-top: 0.7rem;
+        margin-left: 38rem;
+    }
+
+    
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+ 
+    .line,
+    .slide-show,
+    .hero-welcome-pic,
+    .hero-welcome,
+    .text-lefts,
+    .wrapper-digit,
+    .link-tab{
+        display: none;
+    }
+
+    .top-logo{
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+         /* mob-menu */
+    .mob-menu{
+        height: 1rem;
+    }
+
+    .mob-open{
+        display: flex;
+    } 
+    
+    .mob-close, .mob-open{
+        margin-left: 19rem;
+        margin-top: -2rem;
+    }
+
+    .mob-list-item{
+        display: flex;
+        margin-top: 2rem;
+        color: #1B1D23;
+    }
+
+    .link-tab{
+        position: absolute;;
+        width: 325px;
+        height: 260px;
+        margin-left: 1.5rem;
+        margin-top: 2.7rem;
+        background: #EEEFF4;
+        z-index: 1;
+    }
+
+    .wrapper-container{
+        margin-left: -0.5rem;
+        width: 357px;
+        height: 560px;
+        margin-top: 3rem;
+    }
+
+    #image1{
+        width: 357px;
+        height: 560px;
+        
+    }
+
+    .project-text{
+        width: 320px;
+        height: 340px;
+    }
+
+    #h1document{
+        width: 311px;
+        height: 96px;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -1.2px;
+    }
+
+    #pdocument{
+        width: 311px;
+        height: 100px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .rectangle{
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+
+    .arc-studio-text{
+        width: 311px;
+        height: 643px;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+
+    .hero-welcome-arc{
+        width: 311px;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.42857px;
+    }
+
+    .image{
+        width: 357px;
+        height: 560px;
+        margin-left: -0.5rem;
+    }
+
+    .overlay{
+        width: 357px;
+        height: 560px;
+    }
+
+    .wrapper-featured{
+        width: 311px;
+        height: 200px;
+        margin-left: 17rem;
+    }
+
+    .image-text{
+        width: 311px;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.42857px;
+    }
+
+    .wrapper-featured-section{
+        width: 311px;
+        margin-left: 1rem;
+    }
+
+    .wrapper-image-txt{
+        width: 311px;
+        height: 48px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.42857px;
+        
+    }
+
+    .wrapper-featured-arrow{
+        width: 110px;
+    }
+
+    .wrapper-images{
+        width: 311px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper-image-one{
+        width: 311px;
+        height: 240px;
+        background-image: url(/component/assets/portfolio/mobile/image-del-sol.jpg);
+        background-size: cover;
+    }
+
+    .wrapper-image-two{
+        width: 311px;
+        height: 240px;
+        background-image: url(/component/assets/portfolio/mobile/image-228b.jpg);
+        background-size: cover;
+    
+    }
+
+    .wrapper-image-three{
+        width: 311px;
+        height: 240px;
+        background-image: url(/component/assets/portfolio/mobile/image-prototype.jpg);
+        background-size: cover;
+    }
+
+    .wrapper-images-overlay{
+        width: 311px;
+        height: 240px;
+    }
+
+    .wrapper-image-text{
+        margin-top: 9rem;
+    }
+
+    .text-left-txt{
+        display: flex;
+        width: 311px;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        height: 443px;
+        width: 357px;
+        margin-left: -0.4rem;
+        margin-top: 15rem;
+    }
+
+    .arch-logo-footer{
+        display: flex;
+        margin-left: 8rem;
+        margin-top: -4rem;
+        width: 120px;
+        height: 120px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        margin-left: -2rem;
+        gap: 1.5rem;
+    }
+
+    .tab-left{
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 25rem;
+    }
+}
