@@ -416,6 +416,7 @@ ul .slider{
 
 .digit-right-shifts{
     margin-inline: 14.5rem;
+    /* z-index: 3; */
 }
 
 .wrapper-image-text{
