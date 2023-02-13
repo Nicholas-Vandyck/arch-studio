@@ -98,6 +98,12 @@ nav a:hover{
     display: none;
 }
 
+/* .mob-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .arrow-container{
     display: flex;
     margin-top: 2.5rem;
