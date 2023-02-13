@@ -49,7 +49,7 @@
     color: #C8CCD8;
     transform: rotate(90deg);
     letter-spacing: 0.938rem;
-    margin-top: 4.35rem;
+    margin-top: 6rem;
 }
 /* .btn-links{
     display: flex;
@@ -121,7 +121,7 @@
     height: 2330px;
     /* height: 100%; */
     width: 100%;
-    margin-top: 36px;
+    margin-top: 4rem;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
