@@ -20,7 +20,7 @@ main{
     background-color: #C8CCD8;
     width: 0.063rem;
     height: 6.5rem;
-    margin-left: 64px;
+    margin-left: 36px;
     margin-top: -0.5rem;
 }
 
@@ -594,7 +594,7 @@ button:hover{
     }
 }
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) and (min-width: 375px) { 
     body{
         margin: 0;
         padding: 0;
