@@ -134,7 +134,7 @@
 .image{
     width: 50%;
     height: 45rem;
-    background: url('/component/assets/about/desktop/image-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/desktop/image-hero.jpg');
 }
 
 .container-card{
@@ -316,13 +316,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
 }
 
 .image-overlay:hover{
     opacity: 1;
-    cursor: pointer;
+    transition-timing-function: ease;
+    transition: .5s;
+    cursor:pointer;
 }
 
 .image-overlay> div{
@@ -395,7 +397,7 @@
     background: black;
     height: max-content;
     width: max-content;
-    padding: 24px 31px;
+    padding: 24px 32px;
     position: absolute;
     right: 0;
     top: 50%;
@@ -441,7 +443,7 @@
 
     .image{
         width: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/tablet/image-hero.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/tablet/image-hero.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -620,7 +622,7 @@
 
     .image{
         width: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/mobile/image-hero.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/mobile/image-hero.jpg');
         /* background: #5bc9ac; */
         background-repeat: no-repeat;
         background-size: cover;
