@@ -66,3 +66,4 @@ const handleClick = (index) =>{
     }, imgDuration)
 }
 
+

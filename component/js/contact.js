@@ -51,7 +51,22 @@ form.addEventListener('submit', function (e) {
     document.querySelector("textarea[type='message']").style.setProperty("--placeholder-color", "#DF5656");
 })
 
+
+var map = L.map('map').setView([32.73364, -96.592394], 5); 
+
+
+L.tileLayer('https://api.maptiler.com/maps/outdoor-v2/{z}/{x}/{y}.png?key=p77MNruzYTSwoJKH6r7p', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
+var marker = L.marker([32.73364, -96.592394], [35.5951, 82.5515]).addTo(map);
   
+// var map = L.map('map').setView([51.505, -0.09], 13);
+
+// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
+
+// L.marker([51.5, -0.09]).addTo(map)
+//     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+//     .openPopup();
 
 
 

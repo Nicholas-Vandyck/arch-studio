@@ -247,9 +247,12 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.desktop-map{
-    margin-top: 5rem;
+#map{
+    /* position: relative; */
+    /* display: flex; */
     margin-inline-start: 10rem;
+    width: 1110px;
+    height: 560px;
 }
 
 .tablet-map, .mobile-map{
@@ -522,13 +525,10 @@ button:hover{
         width: 165px;
     }
 
-    .desktop-map, .mobile-map{
-        display: none;
-    }
-
-    .tablet-map{
+    #map{
         display: flex;
         margin: 3rem;
+        width: 572px;
     }
 
     .contact-container{
@@ -600,16 +600,15 @@ button:hover{
         padding: 0;
     }
 
-    .desktop-map, 
-    .tablet-map, 
     .line,
     .link-tab,
     .item::after{
         display: none;
     }
 
-    .mobile-map{
-        display: flex;
+    #map{
+        width: 375px;
+        margin: 1px;
     }
 
     .top-logo{
