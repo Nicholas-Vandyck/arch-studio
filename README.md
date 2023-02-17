@@ -45,7 +45,7 @@ JavaScript
 
 #### Contact
 ![Desktop-Page](/component/assets/Desktop_Contact_Page.png)
-![Tablet-Page](/component/assets/Tablet_Conact_Page.png)
+![Tablet-Page](/component/assets/Tablet_Contact_Page.png)
 ![Mobile-Page](/component/assets/Mobile_Contact_Page.png)
 
 
