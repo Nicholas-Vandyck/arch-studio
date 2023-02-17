@@ -1,5 +1,5 @@
 # Frontend Mentor - Arch Studio multi-page website
-![Amalitech](./assets/amalitech.jpeg)
+![Amalitech](/component/assets/amalitech.jpeg)
 
 
 ### Project Description
