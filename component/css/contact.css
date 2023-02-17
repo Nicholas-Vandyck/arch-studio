@@ -31,7 +31,7 @@ main{
     color: #C8CCD8;
     transform: rotate(90deg);
     letter-spacing: 0.938rem;
-    margin-top: 14rem;
+    margin-top: 16.5rem;
     margin-left: -5.5rem;
 }
 
@@ -98,6 +98,12 @@ nav a:hover{
     display: none;
 }
 
+/* .mob-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .arrow-container{
     display: flex;
     margin-top: 2.5rem;
@@ -133,7 +139,7 @@ nav a:hover{
     display: flex;
     height: 720px;
     margin-left: 9.3rem;
-    margin-top: 2rem;
+    margin-top: 4.5rem;
 }
 
 .hero-image{

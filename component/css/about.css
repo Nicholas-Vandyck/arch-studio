@@ -26,7 +26,7 @@
 }
 
 .page-label{
-    width: 89px;
+    width: 10%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -39,10 +39,9 @@
     align-items: center;
 }
 
-.rotated{
+/* .rotated{
     display: flex;
     align-items: end;
-    /* justify-content: start; */
     font-weight: 500;
     font-size: 15px;
     color: #C8CCD8;
@@ -51,11 +50,22 @@
     margin-top: 10rem;
     width: 212px;
     margin-left: -4rem;
-}
-
-/* .btn-links{
-    display: flex;
 } */
+
+.rotated {
+    display: flex;
+    align-items: end;
+    /* justify-content: start; */
+    font-weight: 500;
+    font-size: 15px;
+    color: #C8CCD8;
+    transform: rotate(90deg);
+    letter-spacing: 0.938rem;
+    /* margin-top: 6rem; */
+    margin-top: 10.8rem;
+    width: 228px;
+    margin-left: -4rem;
+}
 
 .btn{
     padding: 0.43rem 1.25rem; 
@@ -122,6 +132,7 @@
 /* -----------------------main-container styling ----------------------*/
 .grid-container{
     width: 100%;
+    /* border: .5px dashed goldenrod; */
 }
 
 .container-01{
@@ -134,7 +145,7 @@
 .image{
     width: 50%;
     height: 45rem;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/desktop/image-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/desktop/image-hero.jpg');
 }
 
 .container-card{
@@ -316,13 +327,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
 }
 
 .image-overlay:hover{
     opacity: 1;
-    cursor: pointer;
+    transition-timing-function: ease;
+    transition: .5s;
+    cursor:pointer;
 }
 
 .image-overlay> div{
@@ -395,7 +408,7 @@
     background: black;
     height: max-content;
     width: max-content;
-    padding: 24px 31px;
+    padding: 24px 32px;
     position: absolute;
     right: 0;
     top: 50%;
@@ -441,7 +454,7 @@
 
     .image{
         width: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/tablet/image-hero.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/tablet/image-hero.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -449,7 +462,6 @@
     .container-card{
         width:90%;
         height: 26.9rem;
-
     }
 
     .container-card > label {
@@ -620,7 +632,7 @@
 
     .image{
         width: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/mobile/image-hero.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/mobile/image-hero.jpg');
         /* background: #5bc9ac; */
         background-repeat: no-repeat;
         background-size: cover;
