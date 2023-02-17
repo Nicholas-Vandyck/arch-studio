@@ -20,7 +20,7 @@ main{
     background-color: #C8CCD8;
     width: 0.063rem;
     height: 6.5rem;
-    margin-left: 64px;
+    margin-left: 36px;
     margin-top: -0.5rem;
 }
 
@@ -31,13 +31,13 @@ main{
     color: #C8CCD8;
     transform: rotate(90deg);
     letter-spacing: 0.938rem;
-    margin-top: 14rem;
+    margin-top: 16rem;
     margin-left: -5.5rem;
 }
 
 .top-logo{
     display: flex;
-    margin-inline-start: 150px;
+    margin-inline-start: 144px;
     margin-top: -3rem;
 }
 
@@ -132,8 +132,8 @@ nav a:hover{
 .first-image-container{
     display: flex;
     height: 720px;
-    margin-left: 9.3rem;
-    margin-top: 2rem;
+    margin-left: 9rem;
+    margin-top: 4.5rem;
 }
 
 .hero-image{
@@ -594,7 +594,11 @@ button:hover{
     }
 }
 
-@media only screen and (max-width: 480px) and (min-width: 320px) { 
+@media only screen and (max-width: 480px) and (min-width: 375px) { 
+    body{
+        margin: 0;
+        padding: 0;
+    }
 
     .desktop-map, 
     .tablet-map, 
@@ -622,7 +626,7 @@ button:hover{
     }
 
     .mob-close, .mob-open{
-        margin-left: 19rem;
+        margin-left: 21rem;
         margin-top: -2rem;
     }
 
@@ -636,25 +640,25 @@ button:hover{
         position: absolute;
         width: 325px;
         height: 255px;
-        margin-left: 1.1rem;
+        margin-left: 3.5rem;
         margin-top: 1.7rem;
         background: #EEEFF4;
         z-index: 2;
     }
 
     .first-image-container{
-        display: flex;
-        width: 382px;
+        /* display: flex;
+        width: 382px; */
         height: 455px;
         margin-left: -2.5rem;
     }
 
     .image-container{
-        height: 213px;
+        height: 256px;
     }
 
     .hero-image{
-        height: 433px;
+        height: 471px;
     }
 
     .image-container span{
@@ -684,7 +688,7 @@ button:hover{
     }
 
     .dash{
-        margin-left: 0.5rem;
+        margin-left: 2.5rem;
     }
 
     .contact-details-container{
@@ -692,7 +696,7 @@ button:hover{
         flex-direction: column;
         width: 351px;
         height: 760px;
-        margin-left: -1.5rem;
+        margin-left: 0.5rem;
     }
 
     .office-container-one h2{
@@ -713,7 +717,7 @@ button:hover{
         flex-direction: column;
         width: 351px;
         height: 760px;
-        margin-left: -1.5rem;
+        margin-left: 0rem;
     }
 
     .contact-container h1{
@@ -754,13 +758,13 @@ button:hover{
     .footer-container {
         display: flex;
         flex-direction: column;
-        width: 362px;
+        width: 400px;
         height: 400px;
         margin-left: -1rem;
     }
 
     .arch-logo-footer{
-        margin: 6rem;
+        margin: 7rem;
         margin-top: -5rem;
     }
 
