@@ -27,26 +27,26 @@ JavaScript
 
 ### Screenshot
 #### Home
-![Desktop-Page](./assets/Desktop_Home_Page.png)
-![Tablet-Page](./assets/Tablet_Home_Page.png)
-![Mobile-Page](./assets/Mobile_Home_Page.png)
+![Desktop-Page](/component/assets//Desktop_Home_Page.png)
+![Tablet-Page](/component/assets/Tablet_Home_Page.png)
+![Mobile-Page](/component/assets/Mobile_Home_Page.png)
 
 
 #### Portfolio
-![Desktop-Page](./assets/Desktop_portfolio_Page.png)
-![Tablet-Page](./assets/Tablet_Portfolio_Page.png)
-![Mobile-Page](./assets/Mobile_Portfolio_Page.png)
+![Desktop-Page](/component/assets/Desktop_portfolio_Page.png)
+![Tablet-Page](/component/assets/Tablet_Portfolio_Page.png)
+![Mobile-Page](/component/assets/Mobile_Portfolio_Page.png)
 
 
 #### About
-![Desktop-Page](./assets/Desktop_about_Page.png)
-![Tablet-Page](./assets/Tablet_About_Page.png)
-![Mobile-Page](./assets/Mobile_About_Page.png)
+![Desktop-Page](/component/assets/Desktop_about_Page.png)
+![Tablet-Page](/component/assets/Tablet_About_Page.png)
+![Mobile-Page](/component/assets/Mobile_About_Page.png)
 
 #### Contact
-![Desktop-Page](./assets/Desktop_Contact_Page.png)
-![Tablet-Page](./assets/Tablet_Conact_Page.png)
-![Mobile-Page](./assets/Mobile_Contact_Page.png)
+![Desktop-Page](/component/assets/Desktop_Contact_Page.png)
+![Tablet-Page](/component/assets/Tablet_Conact_Page.png)
+![Mobile-Page](/component/assets/Mobile_Contact_Page.png)
 
 
 ### Developer 
